@@ -1,0 +1,7 @@
+extends templates/layout/layout-prod.pug
+block head
+	title Vitaliss - Biorecin
+block content
+	include templates/mixins/menu
+	+menu("catalog", "dark")
+	include templates/product/biorecin/biorecin

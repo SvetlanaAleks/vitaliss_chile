@@ -1,0 +1,103 @@
+.contacts
+	padding-top: 234px
+	padding-bottom: 104px
+	+r(1249)
+		padding-bottom: 110px
+	+r(1023)
+		padding-top: 200px
+		padding-bottom: 80px
+	+r(767)
+		padding-top: 150px
+		padding-bottom: 70px
+	+r(479)
+		padding-top: 130px
+		padding-bottom: 40px
+	&__form
+		max-width: 570px
+		width: 100%
+		margin: auto
+		+r(1023)
+			max-width: 500px
+		+r(767)
+			max-width: 100%
+
+.contacts-form
+	background: white
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1)
+	border: 1px solid #EA5297
+	padding: 38px 64px 56px
+	+r(1249)
+		padding: 30px 50px 30px
+	+r(1023)
+		padding: 20px
+	+r(479)
+		padding: 15px
+	&__title
+		text-align: center
+		font-weight: 500
+		font-size: 32px
+		line-height: 32px
+		margin-bottom: 23px
+		color: #020051
+		text-transform: uppercase
+		+r(1023)
+			font-size: 24px
+			line-height: 1.2
+			margin-bottom: 15px
+		+r(479)
+			font-size: 22px
+			margin-bottom: 10px
+	&__desc
+		text-align: center
+		font-size: 18px
+		line-height: 23px
+		margin-bottom: 30px
+		color: #020051
+		text-transform: uppercase
+		+r(1023)
+			font-size: 17px
+			line-height: 1.2
+			margin-bottom: 20px
+		+r(479)
+			font-size: 16px
+	&__inputs
+		margin-bottom: 42px
+		+r(1023)
+			margin-bottom: 15px
+	&__input
+		display: block
+		max-width: 100%
+		width: 100%
+		box-sizing: border-box
+		height: 52px
+		border: 1px solid #EA5297
+		padding: 0 24px
+		font-weight: 300
+		font-size: 22px
+		line-height: 18px
+		color: #020051
+		font-family: 'GT Walsheim LC', Arial, Helvetica, sans-serif
+		margin-bottom: 17px
+		+placeholder
+			font-size: 22px
+			line-height: 18px
+			color: #020051
+			text-transform: uppercase
+			font-family: 'GT Walsheim LC', Arial, Helvetica, sans-serif
+		&--text
+			height: 90px
+			padding: 16px 24px
+			resize: none
+		+r(1023)
+			height: 45px
+			margin-bottom: 15px
+			font-size: 20px
+			+placeholder
+				font-size: 20px
+			&--text
+				height: 80px
+	&__btn
+		max-width: 200px
+		margin: auto
+		+r(1023)
+			max-width: 100%

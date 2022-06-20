@@ -1,0 +1,389 @@
+{
+  "locale": "ru",
+  "menu": {
+    "menu_title_catalog": "Каталог",
+    "menu_title_about_us": "О нас",
+    "menu_title_contacts": "Контакты",
+    "menu_title_review": "Отзывы",
+    "menu_title_btn": "Заказать звонок",
+    "menu_phone": "+7 (499) 703-14-76"
+  },
+  "home": {
+    "about": {
+      "about_block_title": "О компании",
+      "about_block_text1": "Наша миссия -  создавать товары для помощи людям в решении проблем со здоровьем. Это натуральные продукты, безопасность и качество которых проверяются на всех этапах производства*",
+      "about_block_text2": "Силы природы, научные инновации и знания лучших специалистов позволяют нам достигнуть максимального эффекта и пользы. Производим продукцию на современном оборудовании в соответствии с мировыми стандартами качества.",
+      "about_block_text3": "Мы гордимся тем, что с помощью продукции Vitaliss каждый день тысячи людей укрепляют свое здоровье и меняют жизнь к лучшему!",
+      "about_block_text4": "Мы заботимся о вас! С любовью, Vitaliss",
+      "about_block_text5": "(*учитывайте индивидуальные особенности организма к конкретным ингредиентам)"
+    },
+    "faq": {
+      "faq_block_title": "FAQ",
+      "faq_block_question1": "Сертифицирована ли продукция?",
+      "faq_block_answer1": "Все наши продукты проходят сертификацию и имеют сертификаты соответствия требованиям ТР ТС 021/2011 \"О безопасности пищевой продукции\", NH NC 022/2011 \"Пищевая продукция в части ее маркировки\", ТР ТС 029/2012 \"Требования безопасности пищевых добавок, ароматизаторов и Технологических вспомагательных средств\". Коды сертификатов для каждого товара вы можете найти на карточке продукта на нашем сайте.",
+      "faq_block_question2": "Как узнать способ применения товара?",
+      "faq_block_answer2": "Вся информация о способах применения и времени хранения есть на карточках товара, а так же в печатной инструкции, которая находится внутри упаковки.",
+      "faq_block_question3": "Какие есть противопоказания для бадов и космецевтики?",
+      "faq_block_answer3": "Эфективность товаров данной категории проверяется научными исследованиями свойств ингредиентов и клиническими исследованиями готового продукта.",
+      "faq_block_question4": "Какое сырье используется для производства данной продукции?",
+      "faq_block_answer4": "Для БАД и косметики используются только натуральные ингридиенты и экстракты растительного или животного происхождения.",
+      "faq_block_question5": "Как проверяется эффективность бад и косметики?",
+      "faq_block_answer5": "Официальные товары проверены исследованиями действий ингредиентов и клиническими испытаниями"
+    },
+    "header": {
+      "header_block_slide1_title": "Сила природы для вашей красоты",
+      "header_block_slide1_description": "Безопасный уход за зрелой кожей для омоложения и предотвращения появления новых морщин",
+      "header_block_slide2_title": "Природные компоненты для&nbsp;долголетия",
+      "header_block_slide2_description": "Эффективная поддержка здоровья силами природы и современными технологиями для всей семьи",
+      "header_block_slide3_title": "Щедрый урожай без лишних хлопот",
+      "header_block_slide3_description": "Натуральные средства для борьбы с вредителями и стимуляции урожая",
+      "header_block_btn": "ПОДРОБНЕЕ"
+    },
+    "hits_block": {
+      "hits_block_title": "Хиты продаж"
+    },
+
+    "category": {
+      "category_block_title": "Популярные категории",
+      "category_block_title1": "Для&nbsp;женщин",
+      "category_block_description1": "Поддержка женского здоровья в любом возрасте",
+      "category_block_title2": "Для&nbsp;мужчин",
+      "category_block_description2": "Поддержка мужского здоровья в любом возрасте",
+      "category_block_btn": "ПОДРОБНЕЕ"
+    },
+    "reviews": {
+      "reviews_block_title": "Отзывы",
+      "reviews_block_total": "Всего 80",
+      "reviews_block_view_all": "Смотреть все"
+    }
+  },
+  "aboutpage": {
+    "about_page_title": "Коротко о нашей компании",
+    "about_page_description": "<span class=\"color\">Vitaliss</span> – натуральная продукция для красоты и здоровья, сочетающая в себе силу природных компонентов и передовые научные достижения.",
+    "about_page_item1": "Разрабатываем рецептуру",
+    "about_page_item2": "Подбираем натуральные ингредиенты",
+    "about_page_item3": "Проводим клинические исследования",
+    "about_page_item4": "Подтверждаем эффективность товаров",
+    "about_page_item5": "Сертифицируем <br>товары",
+    "about_page_item6": "Реализуем товары онлайн"
+  },
+  "aboutpageform": {
+    "aboutpageform_title": "Форма обратной связи1",
+    "aboutpageform_cta": "Оставьте заявку <br>и мы Вам перезвоним",
+    "aboutpageform_callback": "Если вам удобно, чтобы мы сами вам перезвонили, оставьте свой телефон и мы обязательно с вами свяжемся!",
+    "aboutpageform_field_name": "Имя",
+    "aboutpageform_field_phone": "Телефон",
+    "aboutpageform_field_email": "E-mail",
+    "aboutpageform_field_message": "Сообщение",
+    "aboutpageform_btn": "Отправить"
+  },
+  "hits": [
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/biorecin.png",
+      "name": "Biorecin",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-1.svg",
+          "type": "empty-1"
+        }
+      ],
+      "text": "231 отзыв",
+      "desc": "Омолаживающие капсулы для питания и регенерации клеток кожи",
+      "link": "biorecin.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/dialine.png",
+      "name": "Dialine",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        }
+      ],
+      "text": "213 отзывов",
+      "desc": "Средство с растительными экстрактами для нормализации уровня глюкозы в крови",
+      "link": "dialine.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/hondrexil.png",
+      "name": "Hondreksil",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-2.svg",
+          "type": "empty-2"
+        }
+      ],
+      "text": "232 отзыва",
+      "desc": "Капсулы для устранения разных типов боли и воспалений в суставах",
+      "link": "hondreksil.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/lipocarnit.png",
+      "name": "Lipocarnit",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-3.svg",
+          "type": "empty-3"
+        }
+      ],
+      "text": "225 отзывов",
+      "desc": "Комплекс витаминов и экстрактов для активизации обменных процессов и снижения веса",
+      "link": "lipocarnit.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/normaten.png",
+      "name": "Normaten",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        }
+      ],
+      "text": "219 отзывов",
+      "desc": "Средство для нормализации давления и поддержки работы сердечно-сосудистой системы",
+      "link": "normaten.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/otovix.png",
+      "name": "Otovix",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-3.svg",
+          "type": "empty-3"
+        }
+      ],
+      "text": "205 отзывов",
+      "desc": "Комплекс для улучшения функций слуха со сбалансированной формулой витаминов и минералов",
+      "link": "otovix.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/oculax.png",
+      "name": "Oculax",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-1.svg",
+          "type": "empty-1"
+        }
+      ],
+      "text": "224 отзыва",
+      "desc": "Комплекс витаминов и минералов для восстановления остроты и профилактики снижения зрения",
+      "link": "oculax.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/wortex.png",
+      "name": "Wortex",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-2.svg",
+          "type": "empty-2"
+        }
+      ],
+      "text": "212 отзывов",
+      "desc": "Капсулы для безопасного очищения организма от паразитов и восстановления функций системы пищеварения",
+      "link": "wortex.html"
+    },
+    {
+      "label": "Хиты продаж",
+      "srcPhoto": "img/urotrin.png",
+      "name": "Urotrin",
+      "stars": [
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star.svg",
+          "type": "full"
+        },
+        {
+          "src": "img/svg/star-empty-2.svg",
+          "type": "empty-2"
+        }
+      ],
+      "text": "212 отзывов",
+      "desc": "Средство для мужчин, направленное на нормализацию функций репродуктивной и мочеполовой системы",
+      "link": "urotrin.html"
+    }
+  ],
+  "mobile_menu": {
+    "mobile_menu_item1": "Каталог",
+    "mobile_menu_item2": "О нас",
+    "mobile_menu_item3": "Контакты",
+    "mobile_menu_item4": "Отзывы",
+    "mobile_menu_btn": "Заказать звонок"
+  },
+  "footer": {
+    "footer_menu_item1": "Каталог",
+    "footer_menu_item2": "О нас",
+    "footer_menu_item3": "Отзывы",
+    "footer_menu_item4": "Контакты",
+    "footer_terms": "Условия",
+    "footer_cookies": "Куки полиси",
+    "footer_copyright": "2022 <br>Copyright by naturallic"
+  },
+  "callbackpopup": {
+    "callbackpopup_title": "Мы Вам перезвоним для&nbsp;уточнения деталей",
+    "callbackpopup_field_name": "Имя",
+    "callbackpopup_field_phone": "Телефон",
+    "callbackpopup_field_message": "Сообщение",
+    "callbackpopup_btn": "Заказать звонок"
+  },
+
+  "contacts": {
+    "contacts_title": "Контакты",
+    "contacts_form_title": "Оставьте заявку <br>и мы Вам перезвоним",
+    "contacts_form_description": "Если вам удобно, чтобы мы сами вам перезвонили, оставьте свой телефон и мы обязательно с вами свяжемся!",
+    "contacts_field_name": "Имя",
+    "contacts_field_phone": "Телефон",
+    "contacts_field_email": "E-mail",
+    "contacts_field_message": "Сообщение",
+    "contacts_btn": "Отправить",
+    "contacts_address": "",
+    "contacts_email_title": "",
+    "contacts_telephone_title": ""
+  }
+}

@@ -1,0 +1,388 @@
+.product-item
+	padding-top: 179px
+	padding-bottom: 90px
+	.product
+		max-width: calc(100%/3 - 5px)
+		background: #F4F3F5
+		padding: 10px
+		padding-top: 30px
+		height: 270px
+		&:hover
+			height: 320px
+		&__label
+			top: 10px
+			font-size: 10px
+			line-height: 1
+			&::after
+				height: 13px
+				width: 6px
+		&__name
+			font-size: 14px
+			margin-bottom: 3px
+		&__wrap-photo
+			height: auto
+			img
+				width: 120px
+				height: 120px
+		&__rating
+			margin-bottom: 7px
+		&__rating-stars
+			margin-right: 3px
+		&__rating-star
+			width: 7px
+			height: 7px
+			display: flex
+			&::after
+				width: 7px
+				height: 7px
+		&__rating-text
+			font-size: 8px
+			line-height: 1
+		&__desc
+			font-size: 8px
+			line-height: 11px
+		&__btn
+			font-size: 12px
+			line-height: 30px
+	+r(1249)
+		.product
+			&:hover
+				height: 317px
+			&__desc
+				height: 80px
+			&__btn
+				margin-top: 10px
+	+r(1023)
+		padding-top: 160px
+		padding-bottom: 40px
+		.product
+			height: 250px
+			&:hover
+				height: 291px
+			&__wrap-photo
+				img
+					width: 140px
+					height: 140px
+			&__desc
+				height: 35px
+	+r(767)
+		.product
+			height: 260px
+			&:hover
+				height: 301px
+			&__desc
+				height: 45px
+	+r(639)
+		padding-top: 140px
+		.product
+			height: 285px
+			&:hover
+				height: 325px
+			&__desc
+				height: 68px
+	+r(479)
+		padding-top: 100px
+		padding-bottom: 30px
+		.product
+			height: auto
+			max-width: 100%
+			+nlt
+				margin-bottom: 10px
+			&:hover
+				height: auto
+			&__wrap-photo
+				img
+					width: 180px
+					height: 180px
+			&__desc
+				height: auto
+	&__breadcrumbs
+		margin-bottom: 55px
+		+r(1023)
+			margin-bottom: 50px
+		+r(639)
+			margin-bottom: 30px
+		+r(374)
+			margin-bottom: 20px
+	&__wrapper
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		+r(1023)
+			display: block
+	&__slider
+		max-width: 700px
+		width: 100%
+		margin-left: -28px
+		+r(1249)
+			max-width: 580px
+			margin-left: 0
+		+r(1023)
+			margin: auto
+			margin-bottom: 30px
+		+r(767)
+			max-width: 620px
+	&__info
+		margin-top: -7px
+		font-size: 16px
+		line-height: 20px
+		max-width: 388px
+		width: 100%
+		+r(1023)
+			max-width: 100%
+	&__name
+		font-size: 36px
+		line-height: 1
+		color: #020051
+		text-transform: uppercase
+		margin-bottom: 7px
+	&__desc
+		line-height: 16px
+		color: #020051
+		margin-bottom: 12px
+		text-transform: uppercase
+	&__rating
+		display: flex
+		align-items: center
+		margin-bottom: 19px
+	&__rating-stars
+		margin-right: 9px
+		line-height: 0
+	&__rating-text
+		line-height: 16px
+		color: #020051
+	&__list
+		margin-bottom: 20px
+		+r(1249)
+			margin-bottom: 25px
+		+r(479)
+			margin-bottom: 20px
+	&__btn
+		margin-bottom: 70px
+		max-width: 235px
+		+r(1249)
+			margin-bottom: 25px
+		+r(479)
+			max-width: 100%
+			margin-bottom: 20px
+	&__text
+		margin-bottom: 40px
+		font-size: 16px
+		line-height: 20px
+		color: #020051
+		+r(479)
+			margin-bottom: 20px
+	&__review
+		+nlt
+			margin-bottom: 30px
+
+
+
+.product-list
+	&__item
+		color: #020051
+		&.mb
+			margin-bottom: 20px
+
+.specification
+	+nlt
+		border-bottom: 1px solid #EA5297
+		padding-bottom: 18px
+		margin-bottom: 18px
+	&:first-of-type
+		padding-top: 20px
+		border-top: 1px solid #EA5297
+	&--recomm
+		.specification__text
+			display: block
+	+r(1249)
+		&:first-of-type
+			padding-top: 15px
+		+nlt
+			padding-bottom: 15px
+			margin-bottom: 15px
+	+r(479)
+		&:first-of-type
+			padding-top: 10px
+		+nlt
+			padding-bottom: 10px
+			margin-bottom: 10px
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		&.active
+			.fico
+				transform: rotate(45deg)
+	&__ttl
+		font-weight: 500
+		color: #171717
+	&__text
+		margin-top: 15px
+		display: none
+		color: #020051
+		+r(479)
+			margin-top: 10px
+	.fico
+		transition: all .3s
+		font-size: 9px
+		color: #EA5297
+	&__products
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		+r(479)
+			display: block
+
+
+.slider-prod
+	display: flex
+	align-items: flex-start
+	+r(639)
+		flex-direction: column-reverse
+		align-items: center
+	&__for
+		height: 518px
+		width: 518px
+		background: #F4F3F5
+		display: flex
+		align-items: center
+		justify-content: center
+		+r(1249)
+			width: 430px
+			height: 430px
+		+r(1023)
+			width: 424px
+			height: 424px
+		+r(639)
+			width: 360px
+			height: 360px
+			margin-bottom: 15px
+		+r(479)
+			width: 330px
+			height: 330px
+		+r(374)
+			width: 290px
+			height: 290px
+			margin-bottom: 10px
+	&__for-item
+		img
+			width: 400px
+			height: 400px
+			+object-fit(contain)
+			margin: auto
+		+r(1249)
+			img
+				width: 340px
+				height: 340px
+		+r(639)
+			img
+				width: 280px
+				height: 280px
+		+r(374)
+			img
+				width: 240px
+				height: 240px
+	&__nav
+		display: flex !important
+		flex-direction: column
+		margin-right: 12px
+		.slick-list
+			padding: 0 !important
+		.slick-slide
+			display: inline-block
+		.slick-track
+			transform: none !important
+			display: flex !important
+			flex-direction: column
+		+r(1249)
+			.slick-track
+				width: 143px !important
+		+r(1023)
+			.slick-track
+				width: 141px !important
+		+r(639)
+			margin-right: 0
+			.slick-track
+				width: 360px !important
+				flex-direction: row
+		+r(479)
+			.slick-track
+				width: 330px !important
+		+r(374)
+			.slick-track
+				width: 290px !important
+	&__nav-item
+		width: 172px !important
+		height: 172px
+		display: flex !important
+		align-items: center
+		justify-content: center
+		&.slick-current
+			border: 1px solid #BDCEAD
+		img
+			width: 100px
+			height: 100px
+			+object-fit(contain)
+			margin: auto
+		+r(1249)
+			width: 143px !important
+			height: 143px
+		+r(1023)
+			width: 141px !important
+			height: 141px
+		+r(639)
+			width: 120px !important
+			height: 120px
+			img
+				width: 70px
+				height: 70px
+		+r(479)
+			width: 110px !important
+			height: 110px
+		+r(374)
+			width: 96px !important
+			height: 96px
+
+
+
+.review-small
+	&__top
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 10px
+	&__name
+		font-weight: 500
+		font-size: 16px
+		line-height: 22px
+		color: #020051
+		margin-bottom: 3px
+	&__rating
+		display: flex
+		align-items: center
+	&__rating-stars
+		display: flex
+		align-items: center
+		font-size: 0
+		margin-right: 10px
+		+r(479)
+			margin-right: 5px
+	&__rating-star
+		+r(479)
+			width: 10px
+	&__rating-text
+		font-weight: 500
+		font-size: 16px
+		line-height: 22px
+		color: #020051
+	&__photo
+		width: 63px
+		+r(479)
+			width: 55px
+	&__text
+		font-size: 16px
+		line-height: 21px
+		color: #020051
+		width: 94%

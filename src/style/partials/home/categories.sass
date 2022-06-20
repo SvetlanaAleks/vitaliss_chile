@@ -1,0 +1,135 @@
+.categories
+	padding-bottom: 100px
+	padding-top: 50px
+	+r(1249)
+		padding-bottom: 50px
+	+r(767)
+		padding-bottom: 40px
+	+r(639)
+		padding-bottom: 30px
+	+r(479)
+		padding-top: 0
+		padding-bottom: 40px
+	&__title
+		margin-bottom: 46px
+		+r(1249)
+			margin-bottom: 35px
+		+r(767)
+			margin-bottom: 25px
+		+r(479)
+			margin-bottom: 20px
+	&__list
+		display: flex
+		align-items: flex-start
+		justify-content: space-between
+		font-size: 0
+		+r(479)
+			display: block
+
+
+.category
+	position: relative
+	max-width: 535px
+	width: 100%
+	&:hover
+		.category
+			&__back
+				bottom: 0
+				pointer-events: visible
+				background: white
+				box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.1)
+			&__bottom
+				opacity: 1
+	+r(1249)
+		max-width: calc(100%/2 - 20px)
+	+r(1023)
+		max-width: calc(100%/2 - 10px)
+	+r(639)
+		max-width: calc(100%/2 - 5px)
+	+r(479)
+		max-width: 300px
+		margin: auto
+		+nlt
+			margin-bottom: 15px
+	&__back
+		position: absolute
+		margin: 20px
+		padding: 23px
+		transition: all .3s
+		pointer-events: none
+		z-index: 1
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		bottom: -190px
+		+r(1249)
+			bottom: -170px
+		+r(1023)
+			padding: 10px
+			padding: 15px
+			margin: 15px
+		+r(767)
+			bottom: -140px
+		+r(639)
+			margin: 10px
+			padding: 10px
+			bottom: -150px
+	&__title
+		max-width: 260px
+		width: 100%
+		font-size: 24px
+		line-height: 27px
+		text-transform: uppercase
+		color: #020051
+		line-height: 55px
+		transition: all .3s ease-in-out
+		display: block
+		margin: 0 auto
+		background: #EA5297
+		text-align: center
+		+r(1023)
+			font-size: 22px
+			line-height: 40px
+			padding: 6px 15px
+			max-width: 210px
+		+r(767)
+			font-size: 20px
+			line-height: 35px
+			max-width: 100%
+		+r(639)
+			font-size: 18px
+			line-height: 30px
+	&__bottom
+		margin-top: 26px
+		opacity: 0
+		transition: all .3s ease-in-out
+		height: 100%
+		display: flex
+		flex-direction: column
+		+r(1249)
+			margin-top: 20px
+		+r(1023)
+			margin-top: 10px
+	&__desc
+		font-size: 22px
+		line-height: 23px
+		color: #8B8F8F
+		margin-bottom: 40px
+		+r(1249)
+			margin-bottom: 30px
+		+r(1023)
+			font-size: 20px
+			line-height: 1.2
+			margin-bottom: 20px
+			min-height: 75px
+		+r(767)
+			font-size: 16px
+			min-height: 55px
+			margin-bottom: 15px
+		+r(639)
+			min-height: 78px
+			margin-bottom: 10px
+	&__btn
+		margin-top: auto
+		+r(1023)
+			max-width: 100%

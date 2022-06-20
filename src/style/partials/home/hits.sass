@@ -1,0 +1,86 @@
+.hits-block
+	padding-bottom: 50px
+	padding-top: 20px
+	+r(1249)
+		padding: 40px 0
+	+r(767)
+		padding-bottom: 60px
+	+r(479)
+		padding-top: 40px
+		padding-bottom: 40px
+	&__title
+		margin-bottom: 43px
+		+r(1249)
+			margin-bottom: 35px
+		+r(1023)
+			margin-bottom: 25px
+
+
+.hits
+	position: relative
+	left: calc(50% - 560px)
+	height: 630px
+	max-width: 1110px
+	width: 100%
+	.product
+		width: 350px !important
+		padding: 30px 25px
+		+nlt
+			margin-right: 20px
+	+r(1249)
+		left: calc(50% - 501px)
+		max-width: 1000px
+		height: 660px
+		.product
+			width: 315px !important
+	+r(1023)
+		left: calc(50% - 345px)
+		height: 595px
+		max-width: 690px
+		.product
+			width: 325px !important
+			padding: 25px 20px
+	+r(767)
+		height: 500px
+		left: calc(50% - 290px)
+		max-width: 580px
+		.product
+			width: 280px !important
+			padding: 25px 15px
+			+nlt
+				margin-right: 10px
+	+r(639)
+		left: calc(50% - 220px)
+		max-width: 440px
+		height: 530px
+		.product
+			width: 210px !important
+	+r(479)
+		left: 0
+		padding: 0 15px
+		flex-wrap: wrap
+		justify-content: space-between
+		height: auto
+		max-width: 100%
+		.product
+			max-width: 100%
+			width: 100% !important
+			padding: 40px 10px 20px 10px
+			+nlt
+				margin-right: 0
+			&:not(:nth-of-type(-n+1))
+				margin-top: 20px
+	&__slider
+		+r(479)
+			display: block
+	&__scrollbar
+		left: 50%
+		transform: translateX(-50%)
+		position: absolute
+		bottom: -30px
+		+r(1023)
+			bottom: -20px
+		+r(639)
+			bottom: -10px
+		+r(479)
+			display: none
