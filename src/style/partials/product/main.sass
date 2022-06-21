@@ -275,17 +275,22 @@
 				height: 400px
 				+object-fit(contain)
 		+r(1249)
-			img
-				width: 340px
-				height: 340px
+			height: 430px
+			&--main-photo
+				img
+					width: 370px
+					height: 370px
 		+r(639)
-			img
-				width: 280px
-				height: 280px
+			height: 360px
+			&--main-photo
+				img
+					width: 300px
+					height: 300px
 		+r(374)
-			img
-				width: 240px
-				height: 240px
+			&--main-photo
+				img
+					width: 240px
+					height: 240px
 	&__nav
 		display: flex !important
 		flex-direction: column
@@ -300,10 +305,10 @@
 			flex-direction: column
 		+r(1249)
 			.slick-track
-				width: 143px !important
+				width: 133.5px !important
 		+r(1023)
 			.slick-track
-				width: 141px !important
+				width: 131.5px !important
 		+r(639)
 			margin-right: 0
 			.slick-track
@@ -330,24 +335,39 @@
 				+object-fit(contain)
 				margin: auto
 		+r(1249)
-			width: 143px !important
-			height: 143px
+			width: 133.5px !important
+			height: 133.5px
+			&--main-photo
+				img
+					width: 120px
+					height: 120px
 		+r(1023)
-			width: 141px !important
-			height: 141px
+			width: 131.5px !important
+			height: 131.5px
 		+r(639)
 			width: 120px !important
 			height: 120px
-			img
-				width: 70px
-				height: 70px
+			+nlt
+				margin-bottom: 0
+				margin-right: 10px
+			&--main-photo
+				img
+					width: 100px
+					height: 100px
 		+r(479)
 			width: 110px !important
 			height: 110px
+			&--main-photo
+				img
+					width: 90px
+					height: 90px
 		+r(374)
 			width: 96px !important
 			height: 96px
-
+			&--main-photo
+				img
+					width: 80px
+					height: 80px
 
 
 .review-small
