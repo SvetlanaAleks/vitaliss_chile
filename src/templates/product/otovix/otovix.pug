@@ -1,3 +1,98 @@
+include ../../mixins/product
+-
+	const products = [
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/urotrin.png',
+			name: 'UROTRIN',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/hondrexil.png',
+			name: 'HONDREXIL',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/biorecin.png',
+			name: 'BIORECIN',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
+			link: '#'
+		},
+	];
+
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
@@ -11,19 +106,19 @@ section.product-item
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
-					.slider-prod__nav-item
+					.slider-prod__nav-item.slider-prod__nav-item--main-photo
 						img(src="img/otovix.png", alt="Otovix")
 					.slider-prod__nav-item
-						img(src="img/otovix.png", alt="Otovix")
+						img(src="img/otovix_1.jpg", alt="Otovix")
 					.slider-prod__nav-item
-						img(src="img/otovix.png", alt="Otovix")
+						img(src="img/otovix_2.jpg", alt="Otovix")
 				.slider-prod__for.js-slider-product-for
-					.slider-prod__for-item
+					.slider-prod__for-item.slider-prod__for-item--main-photo
 						img(src="img/otovix.png", alt="Otovix")
 					.slider-prod__for-item
-						img(src="img/otovix.png", alt="Otovix")
+						img(src="img/otovix_1.jpg", alt="Otovix")
 					.slider-prod__for-item
-						img(src="img/otovix.png", alt="Otovix")
+						img(src="img/otovix_2.jpg", alt="Otovix")
 			.product-item__info
 				h2.product-item__name Otovix
 				p.product-item__desc 
@@ -33,18 +128,13 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
-						img.product-item__rating-star(src="img/svg/star-empty-3.svg", alt="")
+						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
 					p.product-item__rating-text 205 отзывов
 				ul.product-item__list.product-list
 					li.product-list__item
-						span Направление: 
-						| Слух
-					li.product-list__item
-						span Форм-фактор: 
-						| Капсулы
-					li.product-list__item
-						span Форма выпуска:
-						| Банка, капсулы, 21 шт
+					li.product-list__item Направление: Слух
+					li.product-list__item Форм-фактор: Капсулы
+					li.product-list__item Объем: 21 шт.
 				button.product-item__btn.button.button--green Заказать
 				p.product-item__text Комплекс для улучшения функций слуха со сбалансированной формулой витаминов и минералов
 				.product-item__description.js-accordeon
@@ -52,42 +142,81 @@ section.product-item
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Описание
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Комплекс компонентов и витаминов направлен на улучшение функций слуха, обеспечивает восполнение микроэлементов и благоприятно влияет на возрастные изменения. Комплекс компонентов и витаминов направлен на улучшение функций слуха, обеспечивает восполнение микроэлементов и благоприятно влияет на возрастные изменения
+						p.specification__text.js-info-accordeon Комплекс компонентов и витаминов направлен на улучшение функций слуха, обеспечивает восполнение микроэлементов и благоприятно влияет на возрастные изменения. Комплекс компонентов и витаминов направлен на улучшение функций слуха, обеспечивает восполнение микроэлементов и благоприятно влияет на возрастные изменения.
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Состав
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Аскорбиновая кислота (вит. C), цитрат магния, желатин (из капсулы), бета-каротин, dl-альфа-токоферол (вит. E), кукурузный мальтодекстрин, моногидрат сульфата цинка, стеарат магния, аморфный диоксид кремния, моногидрат ацетата ретинола (Вит. А), фолиевая кислота (Вит. В9)
+						p.specification__text.js-info-accordeon Аскорбиновая кислота (витамин C), цитрат магния, желатин (из капсулы), бета-каротин, dl-альфа-токоферол (витамин E), кукурузный мальтодекстрин, моногидрат сульфата цинка, стеарат магния, аморфный диоксид кремния, моногидрат ацетата ретинола (витамин А), фолиевая кислота (витамин В9).
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Применение
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon 3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы)
-					.specification
-						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
-							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Индивидуальная непереносимость компонентов. Не употреблять в период беременности и грудного вскармливания
+						p.specification__text.js-info-accordeon 3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы).
+							br
+							| Ограничения: дети до 8 лет.
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Доп. информация
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item
-									span Производитель: 
-									| Laboratorio Intl. Pharmacorp SBO S.A.
-									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana - Chile
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 10.02.2020
-								//li.product-list__item.mb
-								//	span Декларация о соответствии ЕАС:
-								//	br
-								//	| EAЭС N RU Д-RU.ПХ01.В.03234/20
-								li.product-list__item.mb
-									span Срок годности: 
-									| 18 месяцев
-								li.product-list__item
-									span Условия хранения: 
-									| Хранить в сухом, недоступном для детей месте, при температуре не выше +25°С и  относительной влажности 60%
+								li.product-list__item Производитель: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
+								//- li.product-list__item Дата регистрации: 10.04.2020
+								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
+								li.product-list__item.mb Срок годности: 18 месяцев
+								li.product-list__item Условия хранения: хранить в сухом, недоступном для детей месте, при температуре не выше +25°С и относительной влажности 60%.
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Отзывы
+							i.fico.fico-cross
+						.specification__text.js-info-accordeon
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star-black.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star-black.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+					.specification.specification--recomm
+						.specification__top
+							h3.specification__ttl С этим товаром покупают
+						.specification__text
+							.specification__products
+								each product in products
+									+product(product)
