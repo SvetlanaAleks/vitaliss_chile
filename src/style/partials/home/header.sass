@@ -13,20 +13,27 @@
 	padding-bottom: 240px
 	&--1
 		background: url('../img/header_slide_1.jpg') no-repeat center top
+		background-size: cover
 	&--2
 		background: url('../img/header_slide_2.jpg') no-repeat center top
+		background-size: cover
 	+r(1249)
 		padding-top: 245px
 		padding-bottom: 200px
+		min-height: 835px
 	+r(1023)
 		padding-top: 195px
 		padding-bottom: 150px
+		min-height: 685px
 	+r(767)
 		padding-top: 135px
 		padding-bottom: 110px
-		background-size: cover
+		min-height: 525px
 	+r(639)
 		padding-top: 105px
+		min-height: 485px
+	+r(479)
+		min-height: auto
 	&__wrap
 		display: flex
 		justify-content: space-between
@@ -46,6 +53,11 @@
 		+r(479)
 			max-width: 100%
 			text-align: center
+			min-height: 265px
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
 	&__title
 		font-size: 64px
 		line-height: 60px
@@ -90,5 +102,5 @@
 		+r(639)
 			max-width: 180px
 		+r(479)
-			margin: auto
+			margin: 0 auto
 

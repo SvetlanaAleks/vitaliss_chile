@@ -113,10 +113,8 @@
 	&__slider
 		max-width: 700px
 		width: 100%
-		margin-left: -28px
 		+r(1249)
 			max-width: 580px
-			margin-left: 0
 		+r(1023)
 			margin: auto
 			margin-bottom: 30px
@@ -243,8 +241,8 @@
 		flex-direction: column-reverse
 		align-items: center
 	&__for
-		height: 518px
-		width: 518px
+		height: 500px
+		width: 500px
 		background: #F4F3F5
 		display: flex
 		align-items: center
@@ -267,11 +265,15 @@
 			height: 290px
 			margin-bottom: 10px
 	&__for-item
-		img
-			width: 400px
-			height: 400px
-			+object-fit(contain)
-			margin: auto
+		display: flex !important
+		align-items: center
+		justify-content: center
+		height: 500px
+		&--main-photo
+			img
+				width: 400px
+				height: 400px
+				+object-fit(contain)
 		+r(1249)
 			img
 				width: 340px
@@ -314,18 +316,19 @@
 			.slick-track
 				width: 290px !important
 	&__nav-item
-		width: 172px !important
-		height: 172px
+		width: 156.5px !important
+		height: 156.5px
 		display: flex !important
 		align-items: center
 		justify-content: center
-		&.slick-current
-			border: 1px solid #BDCEAD
-		img
-			width: 100px
-			height: 100px
-			+object-fit(contain)
-			margin: auto
+		+nlt
+			margin-bottom: 15px
+		&--main-photo
+			img
+				width: 130px
+				height: 130px
+				+object-fit(contain)
+				margin: auto
 		+r(1249)
 			width: 143px !important
 			height: 143px

@@ -1,0 +1,218 @@
+include ../../mixins/product
+-
+	const products = [
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/urotrin.png',
+			name: 'UROTRIN',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/hondrexil.png',
+			name: 'HONDREXIL',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/biorecin.png',
+			name: 'BIORECIN',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
+			link: '#'
+		},
+	];
+
+section.product-item
+	.container
+		.product-item__breadcrumbs.breadcrumbs
+			a.breadcrumbs__link(href="/") Главная
+			span.breadcrumbs__line /
+			a.breadcrumbs__link(href="catalog.html") Каталог
+			span.breadcrumbs__line /
+			a.breadcrumbs__link(href="catalog.html?id=man") Для Женщин
+			span.breadcrumbs__line /
+			span.breadcrumbs__main HONFREXIL
+		.product-item__wrapper
+			.product-item__slider.slider-prod
+				.slider-prod__nav.js-slider-product-nav
+					.slider-prod__nav-item.slider-prod__nav-item--main-photo
+						img(src="img/hondrexil.png", alt="HONFREXIL")
+					.slider-prod__nav-item
+						img(src="img/hondrexil_1.jpg", alt="HONFREXIL")
+					.slider-prod__nav-item
+						img(src="img/hondrexil_2.jpg", alt="HONFREXIL")
+				.slider-prod__for.js-slider-product-for
+					.slider-prod__for-item.slider-prod__for-item--main-photo
+						img(src="img/hondrexil.png", alt="HONFREXIL")
+					.slider-prod__for-item
+						img(src="img/hondrexil_1.jpg", alt="HONFREXIL")
+					.slider-prod__for-item
+						img(src="img/hondrexil_2.jpg", alt="HONFREXIL")
+			.product-item__info
+				h2.product-item__name HONFREXIL
+				p.product-item__desc join support
+				.product-item__rating
+					.product-item__rating-stars
+						img.product-item__rating-star(src="img/svg/star.svg", alt="")
+						img.product-item__rating-star(src="img/svg/star.svg", alt="")
+						img.product-item__rating-star(src="img/svg/star.svg", alt="")
+						img.product-item__rating-star(src="img/svg/star.svg", alt="")
+						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
+					p.product-item__rating-text 231 отзыв
+				ul.product-item__list.product-list
+					li.product-list__item Направление: Суставы
+					li.product-list__item Форм-фактор: Капсулы
+					li.product-list__item Объем: 21 шт.
+				button.product-item__btn.button Заказать
+				.product-item__description.js-accordeon
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Описание
+							i.fico.fico-cross
+						p.specification__text.js-info-accordeon Пищевая добавка с растительными ингредиентами для нормализации работы опорно-двигательной системы. Растительные компоненты влияют  на снижение боли и подвижность суставов.
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Состав
+							i.fico.fico-cross
+						p.specification__text.js-info-accordeon Гидролизованный коллаген, желатин (из капсулы), цитрат магния, порошок куркумы (Curcuma longa), порошок хвоща полевого (Equisetum arvense), аскорбиновая кислота (витамин C), кукурузный мальтодекстрин, рыбий жир в порошке (порошок Омега 3), стеарат магния, dl-альфа-токоферола ацетат (вит. E), аморфный диоксид кремния.
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Применение
+							i.fico.fico-cross
+						p.specification__text.js-info-accordeon 3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы). 
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Доп. информация
+							i.fico.fico-cross
+						.specification__text.js-info-accordeon
+							.product-list
+								li.product-list__item Производитель:  SOCIEDAD COMERCIAL Y DE ASESORIAS UNITRADE SpA. 
+								li.product-list__item Дата регистрации: 10.04.2020
+								li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
+								li.product-list__item.mb Срок годности: 18 месяцев
+								li.product-list__item Условия хранения: хранить в сухом, недоступном для детей месте, при температуре не выше +25°С и  относительной влажности 60%.
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Отзывы
+							i.fico.fico-cross
+						.specification__text.js-info-accordeon
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star-black.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star-black.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+					.specification.specification--recomm
+						.specification__top
+							h3.specification__ttl С этим товаром покупают
+						.specification__text
+							.specification__products
+								each product in products
+									+product(product)

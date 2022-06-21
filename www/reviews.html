@@ -11,25 +11,190 @@
     <title>Vitaliss - Отзывы</title>
   </head>
   <body>
-    <section class="reviews-main">
-      <div class="container">
-        <h2 class="reviews-main__title title">Отзывы</h2>
-        <div class="reviews-main__list">
-          <div class="review">
-            <div class="review__top"><img class="review__photo" src="/img/review_photo_1.png" alt=""/>
-              <div class="review__person">
-                <p class="review__name">Ермоленко Влада</p>
-                <div class="review__rating">
-                  <p class="review__rating-name">Око-плюс</p>
-                  <div class="review__rating-stars"><img class="review__rating-star" src="/img/svg/star.svg" alt=""/><img class="review__rating-star" src="/img/svg/star.svg" alt=""/><img class="review__rating-star" src="/img/svg/star.svg" alt=""/><img class="review__rating-star" src="/img/svg/star.svg" alt=""/><img class="review__rating-star" src="/img/svg/star-empty.svg" alt=""/></div>
+            <div class="menu-mobile" id="js-mobile-menu">
+              <div class="menu-mobile__wrap">
+                <div class="menu-mobile__top"><a class="logo menu-mobile__logo" href="/"><img src="/img/svg/logo_big.svg" alt=""/></a>
+                  <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+                </div>
+                <ul class="menu-mobile__nav menu">
+                  <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                  <li class="menu__item"><a class="menu__link active" href="reviews.html">Отзывы</a></li>
+                </ul>
+                <div class="menu-mobile__bottom">
+                  <button class="menu-mobile__btn btn js-show-popup" data-target="#popup">Заказать звонок</button>
                 </div>
               </div>
             </div>
-            <div class="review__bottom">
-              <p class="review__main">Отличное качество!</p>
-              <p class="review__text">После обращения к дерматологу ребенку поставили диагноз гиперсухость кожи. В комплексе с кремами и&nbsp;специальным средством для купания назначили обязате...</p>
+        <div class="nav nav--dark">
+          <div class="container">
+            <div class="nav__wrap"><a class="nav__logo" href="index.html"><img src="/img/svg/logo.svg" alt="Vitaliss"/></a>
+              <div class="nav__right">
+                <ul class="nav__menu menu">
+                  <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                  <li class="menu__item"><a class="menu__link active" href="reviews.html">Отзывы</a></li>
+                </ul>
+                <div class="nav__btn-wrap"><a class="nav__link-tel" href="tel:+56229141108">(+56) 229 141 108</a>
+                  <button class="nav__btn btn js-show-popup" data-target="#popup">Заказать звонок</button>
+                </div>
+                <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+              </div>
             </div>
           </div>
+        </div>
+    <section class="reviews-main">
+      <div class="container">
+        <div class="reviews-main__slider js-slider-reviews-wrap">
+          <div class="reviews-main__list js-slider-reviews swiper-wrapper">
+            <div class="reviews-list swiper-slide">
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">ХУАН ГОНСАЛЕС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;NORMATEN</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Плавно снижает давление и убирает неприятные симптомы, давление перестало резко подниматься. Побочных свойств не вызвал. Все отлично!”</p>
+                    </div>
+                  </div>
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">РОЗА ПЕРЕС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;NORMATEN</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“NORMATEN пришел за пару дней. Уже с первых дней применения давление перестало скакать. А после курса полностью стабилизировалось. Быстро помогает!”</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="reviews-list swiper-slide">
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">Карлос Лопес</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;OCULAX</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Заказал Oculax. Доставка быстрая — всего пару дней. Средством доволен. Зрение стало лучше. Рекомендую!”</p>
+                    </div>
+                  </div>
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">АННА РОХАС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;DIALINE</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Прекрасный продукт для всех, кто страдает от повышенного сахара. И состояние улучшает, и контролировать сахар помогает. Чувствую себя прекрасно!”</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="reviews-list swiper-slide">
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">МАРИЯ МУНЬОС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;LIPOCARNIT</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Средство замечательное! Минус 11 кг!!! Получила тело, о котором мечтала, и так легко! Доставка была быстрой, всего пару дней! Ставлю средству 10 из 10!”</p>
+                    </div>
+                  </div>
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">КАРОЛИНА САНЧЕЗ</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;BIORECIN</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“BIORECIN — чудо! Морщины разгладились, кожа стала увлажненной и упругой. Помолодела лет на 20! Знакомые не узнают на улице!”</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="reviews-list swiper-slide">
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">ХУАН ГОНСАЛЕС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;NORMATEN</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Плавно снижает давление и убирает неприятные симптомы, давление перестало резко подниматься. Побочных свойств не вызвал. Все отлично!”</p>
+                    </div>
+                  </div>
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">РОЗА ПЕРЕС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;NORMATEN</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“NORMATEN пришел за пару дней. Уже с первых дней применения давление перестало скакать. А после курса полностью стабилизировалось. Быстро помогает!”</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="reviews-list swiper-slide">
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">Карлос Лопес</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;OCULAX</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Заказал Oculax. Доставка быстрая — всего пару дней. Средством доволен. Зрение стало лучше. Рекомендую!”</p>
+                    </div>
+                  </div>
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">АННА РОХАС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;DIALINE</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Прекрасный продукт для всех, кто страдает от повышенного сахара. И состояние улучшает, и контролировать сахар помогает. Чувствую себя прекрасно!”</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="reviews-list swiper-slide">
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">МАРИЯ МУНЬОС</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;LIPOCARNIT</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“Средство замечательное! Минус 11 кг!!! Получила тело, о котором мечтала, и так легко! Доставка была быстрой, всего пару дней! Ставлю средству 10 из 10!”</p>
+                    </div>
+                  </div>
+                  <div class="review js-review">
+                    <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
+                      <div class="review__desc">
+                        <p class="review__name">КАРОЛИНА САНЧЕЗ</p>
+                        <p class="review__desc"><span>высказал</span> свое мнение про&nbsp;BIORECIN</p>
+                      </div>
+                    </div>
+                    <div class="review__bottom">
+                      <p class="review__text">“BIORECIN — чудо! Морщины разгладились, кожа стала увлажненной и упругой. Помолодела лет на 20! Знакомые не узнают на улице!”</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="reviews-main__scrollbar scrollbar js-slider-reviews-scrollbar"></div>
         </div>
       </div>
     </section>

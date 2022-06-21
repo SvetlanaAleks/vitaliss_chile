@@ -15,10 +15,25 @@ const Sliders = (function () {
         var swiper = new Swiper(".swiper-slider-review-" + index, {
           direction: "horizontal",
           slidesPerView: 1,
+          autoHeight: true,
           scrollbar: {
             el: ".js-slider-reviews-scrollbar",
             draggable: true,
             dragSize: dragSize,
+          },
+          breakpoints: {
+            480: {
+              slidesPerView: 1,
+            },
+            640: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
           },
         });
       });
