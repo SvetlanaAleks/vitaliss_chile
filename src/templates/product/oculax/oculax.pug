@@ -1,3 +1,98 @@
+include ../../mixins/product
+-
+	const products = [
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/urotrin.png',
+			name: 'UROTRIN',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/hondrexil.png',
+			name: 'HONDREXIL',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
+			link: '#'
+		},
+		{
+			label: 'ХИТ',
+			srcPhoto: 'img/biorecin.png',
+			name: 'BIORECIN',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
+			link: '#'
+		},
+	];
+
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
@@ -11,40 +106,33 @@ section.product-item
 		.product-item__wrapper
 			.product-item__slider.slider-prod
 				.slider-prod__nav.js-slider-product-nav
+					.slider-prod__nav-item.slider-prod__nav-item--main-photo
+						img(src="img/oсulax.png", alt="Oculax")
 					.slider-prod__nav-item
-						img(src="img/oculax.png", alt="Oculax")
+						img(src="img/oculax_1.jpg", alt="Oculax")
 					.slider-prod__nav-item
-						img(src="img/oculax.png", alt="Oculax")
-					.slider-prod__nav-item
-						img(src="img/oculax.png", alt="Oculax")
+						img(src="img/oculax_2.jpg", alt="Oculax")
 				.slider-prod__for.js-slider-product-for
+					.slider-prod__for-item.slider-prod__for-item--main-photo
+						img(src="img/oсulax.png", alt="Oculax")
 					.slider-prod__for-item
-						img(src="img/oculax.png", alt="Oculax")
+						img(src="img/oculax_1.jpg", alt="Oculax")
 					.slider-prod__for-item
-						img(src="img/oculax.png", alt="Oculax")
-					.slider-prod__for-item
-						img(src="img/oculax.png", alt="Oculax")
+						img(src="img/oculax_2.jpg", alt="Oculax")
 			.product-item__info
 				h2.product-item__name Oculax
-				//p.product-item__desc
 				.product-item__rating
 					.product-item__rating-stars
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
-						img.product-item__rating-star(src="img/svg/star-empty-1.svg", alt="")
+						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
 					p.product-item__rating-text 224 отзыва
 				ul.product-item__list.product-list
-					li.product-list__item
-						span Направление: 
-						| Зрение
-					li.product-list__item
-						span Форм-фактор: 
-						| Капсулы
-					li.product-list__item
-						span Форма выпуска:
-						| Банка, капсулы, 30 шт
+					li.product-list__item Направление: Зрение
+					li.product-list__item Форм-фактор: Капсулы
+					li.product-list__item Объем: 21 шт.
 				button.product-item__btn.button.button--green Заказать
 				p.product-item__text Комплекс витаминов и минералов для восстановления остроты и профилактики снижения зрения
 				.product-item__description.js-accordeon
@@ -52,43 +140,79 @@ section.product-item
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Описание
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Rапсулы для улучшения зрения, содержат растительные компоненты и витамины которые помогают нормализовать функцию увлажнения глаза, улучшить кровоснабжение капилляров и  благоприятно влияют на остроту зрения
+						p.specification__text.js-info-accordeon Капсулы для улучшения зрения, содержат растительные компоненты и витамины которые помогают нормализовать функцию увлажнения глаза, улучшить кровоснабжение капилляров и благоприятно влияют на остроту зрения.
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Состав
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Vit А,  Vit E,  Vit C, Селенит натрия, сульфат цинка
+						p.specification__text.js-info-accordeon Vit А, Vit E, Vit C, Селенит натрия, сульфат цинка.
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Применение
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день)
-					.specification
-						.specification__top.js-btn-accordeon
-							h3.specification__ttl Противопоказания
-							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Не рекомендуется употреблять детям до 8 лет, беременным женщинам и кормящим женщинам без указания компетентного специалиста и не заменяет сбалансированную диету
-
+						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день).
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Доп. информация
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item
-									span Производитель: 
-									| Laboratorio Internacional Pharmacorp SBO S.A.
-									| Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
-								//li.product-list__item
-								//	span Дата регистрации:
-								//	| 08.04.2021
-								//li.product-list__item.mb
-								//	span Сертификат соответствия:
-								//	br
-								//	| РОСС RU.HB65.H01028/21
-								li.product-list__item.mb
-									span Срок годности: 
-									| 18 месяцев
-								li.product-list__item
-									span Условия хранения: 
-									| Хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой
+								li.product-list__item Производитель: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
+								//- li.product-list__item Дата регистрации: 10.04.2020
+								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
+								li.product-list__item.mb Срок годности: 18 месяцев
+								li.product-list__item Условия хранения: хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой.
+					.specification
+						.specification__top.js-btn-accordeon
+							h3.specification__ttl Отзывы
+							i.fico.fico-cross
+						.specification__text.js-info-accordeon
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star-black.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star-black.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+							.product-item__review.review-small
+								.review-small__top
+									.review-small__desc
+										p.review-small__name Ермоленко Влада
+										.review-small__rating
+											.review-small__rating-stars
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+												img.review-small__rating-star(src="img/svg/star.svg", alt="")
+											p.review-small__rating-text Отличное качество!
+									img.review-small__photo(src="img/review_argosev_bio_1.png", alt="")
+								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
+					.specification.specification--recomm
+						.specification__top
+							h3.specification__ttl С этим товаром покупают
+						.specification__text
+							.specification__products
+								each product in products
+									+product(product)
