@@ -33,6 +33,8 @@
 		+r(374)
 			flex-wrap: wrap
 			margin-bottom: 20px
+	&__right
+		width: 100%
 	&__list
 		display: none
 		&.active
@@ -41,11 +43,11 @@
 			max-width: 285px
 			background: #F4F3F5
 			padding: 60px 26px 22px
-			height: 530px
+			height: 485px
 			&:not(:nth-of-type(-n+3))
 				margin-top: 32px
 			&:hover
-				height: 598px
+				height: 560px
 			&__wrap-photo
 				height: auto
 				img
@@ -55,22 +57,22 @@
 			&__label
 				opacity: 1
 			&__desc
-				height: 110px
+				height: 75px
 		+r(1249)
 			.product
 				max-width: 265px
 				padding: 50px 15px 15px
-				height: 512px
+				height: 470px
 				&:hover
-					height: 578px
+					height: 545px
 				&:not(:nth-of-type(-n+3))
 					margin-top: 20px
 		+r(1023)
 			.product
 				max-width: 255px
-				height: 470px
+				height: 435px
 				&:hover
-					height: 551px
+					height: 515px
 				&:not(:nth-of-type(-n+2))
 					margin-top: 10px
 				&__wrap-photo
@@ -78,27 +80,27 @@
 						height: 215px
 						width: 215px
 				&__desc
-					height: 130px
+					height: 95px
 		+r(767)
 			.product
 				max-width: 49%
-				height: 420px
+				height: 410px
 				&:hover
-					height: 476px
+					height: 475px
 				&__desc
 					height: 72px
 		+r(639)
 			.product
 				padding: 30px 10px 15px
-				height: 415px
+				height: 385px
 				&:hover
-					height: 480px
+					height: 440px
 				&__wrap-photo
 					img
 						height: 195px
 						width: 195px
 				&__desc
-					height: 130px
+					height: 90px
 		+r(479)
 			.product
 				height: auto
@@ -118,15 +120,27 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-		&--show
-			margin-bottom: 32px
-		&--hide
-			display: none
-			&.show
-				display: flex
+		&--small
+			justify-content: flex-start
+			.product
+				+nlt
+					margin-right: 30px
+		+r(1249)
+			&--small
+				.product
+					+nlt
+						margin-right: 15px
 		+r(1023)
-			&--show
-				margin-bottom: 10px
+			&--small
+				.product
+					+nlt
+						margin-right: 10px
+		+r(767)
+			&--small
+				justify-content: space-between
+				.product
+					+nlt
+						margin-right: 0px
 	&__count
 		margin-top: 90px
 		text-align: center

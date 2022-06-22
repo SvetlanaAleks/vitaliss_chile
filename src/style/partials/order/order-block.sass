@@ -1,0 +1,82 @@
+.order-block
+	padding-top: 230px
+	padding-bottom: 104px
+	.contacts-form
+		&__inputs
+			margin-bottom: 20px
+		&__counter
+			margin-bottom: 20px
+	+r(1023)
+		padding-top: 180px
+	+r(767)
+		padding-top: 150px
+	+r(479)
+		padding-top: 120px
+		padding-bottom: 50px
+	&__wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+		+r(1023)
+			display: block
+	&__form
+		max-width: 570px
+		width: 100%
+		+r(1023)
+			margin: auto
+	&__product-wrap
+		margin-right: 30px
+		+r(1023)
+			margin-right: 0
+			text-align: center
+			margin-bottom: 30px
+	&__product
+		max-width: 400px
+		width: 100%
+		margin: auto
+		+r(1023)
+			max-width: 360px
+		+r(767)
+			display: none
+	&__name
+		font-size: 36px
+		line-height: 1
+		text-transform: uppercase
+		color: #020051
+		text-align: center
+		+r(1023)
+			font-size: 30px
+
+.counter
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #020051
+	&__photo
+		max-width: 100px
+		width: 100%
+	&__text
+		font-size: 22px
+		line-height: 18px
+		text-transform: uppercase
+		margin-right: 20px
+		+r(479)
+			display: none
+	&__block
+		display: flex
+		align-items: center
+	&__block-arrow
+		font-size: 22px
+		line-height: 18px
+		text-transform: uppercase
+		cursor: pointer
+		user-select: none
+	&__num
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 55px
+		height: 55px
+		border: 1px solid #EA5297
+		font-size: 22px
+		margin: 0 7px

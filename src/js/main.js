@@ -6,6 +6,7 @@ import Controls from "./modules/Controls";
 import Popup from "./modules/Popup";
 import Menu from "./modules/Menu";
 import layout from "./global/layout";
+import Order from "./modules/Order";
 
 $(function () {
   var year = new Date().getFullYear();
@@ -19,6 +20,7 @@ $(function () {
   Controls.init();
   Popup.init();
   Menu.init();
+  Order.init();
 
   objectFitImages();
 

@@ -1,0 +1,7 @@
+extends templates/layout/layout.pug
+block head
+	title Оформить заказ!
+block content
+	include templates/mixins/menu
+	+menu("order", "dark")
+	include templates/order/order-block
