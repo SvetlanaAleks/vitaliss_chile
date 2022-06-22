@@ -5,12 +5,13 @@
 				img.order-block__product.js-product-photo(src="", alt="")
 				p.order-block__name.js-product-name
 			.order-block__form
-				form.contacts-form(action="/", method="post")
+				form.contacts-form.x_order_form(action="success.html")
 					p.contacts-form__title Оформить заказ!
 					.contacts-form__wrapper
 						.contacts-form__inputs
-							input.contacts-form__input(type="text" name="name" placeholder="Имя")
-							input.contacts-form__input(type="phone" name="tel" placeholder="Телефон")
+							input.contacts-form__input.contacts-form__input--hidden.js-product-name-form(value="" name="product")
+							input.contacts-form__input(type="text" name="name" placeholder="Имя" required)
+							input.contacts-form__input(type="phone" name="tel" placeholder="Телефон" required)
 							input.contacts-form__input(type="email" name="email" placeholder="E-mail")
 							textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Сообщение")
 						.contacts-form__counter.counter

@@ -15,6 +15,7 @@ const Order = (function () {
       if (paramdId) {
         $(".js-product-name").html(paramdId);
         $(".js-product-photo").attr("src", `img/${paramdId}.png`);
+        $(".js-product-name-form").val(paramdId);
       }
     },
     choiceCountProduct: function () {
@@ -36,9 +37,15 @@ const Order = (function () {
         $(".js-counter-number").html(count);
       });
     },
+    createSuccessPage: function () {
+      var paramProduct = getParameterByName("product");
+      $(".js-success-product-name").html(paramProduct);
+      $(".js-success-product-photo").attr("src", `img/${paramProduct}.png`);
+    },
     init: function () {
       Order.showOrderProduct();
       Order.choiceCountProduct();
+      Order.createSuccessPage();
     },
   };
 })();

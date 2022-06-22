@@ -52,12 +52,13 @@
             <p class="order-block__name js-product-name"></p>
           </div>
           <div class="order-block__form">
-            <form class="contacts-form" action="/" method="post">
+            <form class="contacts-form x_order_form" action="success.html">
               <p class="contacts-form__title">Оформить заказ!</p>
               <div class="contacts-form__wrapper">
                 <div class="contacts-form__inputs">
-                  <input class="contacts-form__input" type="text" name="name" placeholder="Имя"/>
-                  <input class="contacts-form__input" type="phone" name="tel" placeholder="Телефон"/>
+                  <input class="contacts-form__input contacts-form__input--hidden js-product-name-form" value="" name="product"/>
+                  <input class="contacts-form__input" type="text" name="name" placeholder="Имя" required="required"/>
+                  <input class="contacts-form__input" type="phone" name="tel" placeholder="Телефон" required="required"/>
                   <input class="contacts-form__input" type="email" name="email" placeholder="E-mail"/>
                   <textarea class="contacts-form__input contacts-form__input--text" name="comment" placeholder="Сообщение"></textarea>
                 </div>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"/>
     <link rel="stylesheet" href="/css/main.css" type="text/css"/>
-    <title>Vitaliss - Отзывы</title>
+    <title>Благодарим за Ваш заказ!</title>
   </head>
   <body>
             <div class="menu-mobile" id="js-mobile-menu">
@@ -20,7 +20,7 @@
                   <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
                   <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
                   <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-                  <li class="menu__item"><a class="menu__link active" href="reviews.html">Отзывы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="reviews.html">Отзывы</a></li>
                 </ul>
                 <div class="menu-mobile__bottom">
                   <button class="menu-mobile__btn btn js-show-popup" data-target="#popup">Заказать звонок</button>
@@ -35,7 +35,7 @@
                   <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
                   <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
                   <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-                  <li class="menu__item"><a class="menu__link active" href="reviews.html">Отзывы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="reviews.html">Отзывы</a></li>
                 </ul>
                 <div class="nav__btn-wrap"><a class="nav__link-tel" href="tel:+56229141108">(+56) 229 141 108</a>
                   <button class="nav__btn btn js-show-popup" data-target="#popup">Заказать звонок</button>
@@ -45,10 +45,50 @@
             </div>
           </div>
         </div>
-    <div class="reviews-main">
+    <div class="success-header">
       <div class="container">
-        <div class="reviews-main__slider js-slider-reviews-wrap">
-          <div class="reviews-main__list js-slider-reviews swiper-wrapper">
+        <div class="success-header__wrapper"><img class="success-header__photo js-success-product-photo" src="" alt=""/>
+          <div class="success-header__info">
+            <h2 class="success-header__title">Благодарим за Ваш заказ!</h2>
+            <div class="success-header__desc">
+              <p class="success-header__text">Спасибо, что выбрали нашу компанию!<br/>Мы свяжемся с Вами по номеру (+56) 229 141 108 через несколько минут для уточнения деталей заказа.</p>
+              <p class="success-header__text"><span class="js-success-product-name"> </span> восстановил здоровье тысячам людей.<br/>Вы на правильном пути!</p>
+            </div>
+          </div>
+        </div>
+        <div class="success-header__list">
+          <div class="success-item">
+            <div class="success-item__wrap-photo"><img class="success-item__ico" src="/img/svg/success_1.svg" alt=""/></div>
+            <p class="success-item__text">Среднее время ожидания звонка<span>5 минут</span></p>
+          </div>
+          <div class="success-item">
+            <div class="success-item__wrap-photo"><img class="success-item__ico" src="/img/svg/success_2.svg" alt=""/></div>
+            <p class="success-item__text">Наличие товара на&nbsp;складе<span>В наличии</span></p>
+          </div>
+          <div class="success-item">
+            <div class="success-item__wrap-photo"><img class="success-item__ico" src="/img/svg/success_3.svg" alt=""/></div>
+            <p class="success-item__text">Остаток <br/>на&nbsp;складе<span>37 штук</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="success-diary">
+      <div class="container">
+        <div class="success-diary__wrapper"><img class="success-diary__photo" src="/img/diary.jpg" alt=""/>
+          <div class="success-diary__info">
+            <h2 class="success-diary__title">Забота о Вашем здоровье - наш главный приоритет!</h2>
+            <div class="success-diary__desc">
+              <p class="success-diary__text">К заказу мы прилагаем подарок от компании Дневник Здоровья, который поможет отслеживать изменения в организме и чувствовать себя прекрасно!</p>
+              <p class="success-diary__text">Всегда с Вами, команда Vitaliss!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="success-reviews">
+      <div class="container">
+        <div class="success-reviews__slider js-slider-reviews-wrap">
+          <div class="success-reviews__list js-slider-reviews swiper-wrapper">
             <div class="reviews-list swiper-slide">
                   <div class="review js-review">
                     <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
@@ -194,7 +234,7 @@
                   </div>
             </div>
           </div>
-          <div class="reviews-main__scrollbar scrollbar js-slider-reviews-scrollbar"></div>
+          <div class="success-reviews__scrollbar scrollbar js-slider-reviews-scrollbar"></div>
         </div>
       </div>
     </div>

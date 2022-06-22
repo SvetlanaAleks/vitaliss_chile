@@ -15,13 +15,12 @@ include ../data/index
 	return resultArray
 	}, []);
 
-
-.reviews-main
+.success-reviews
 	.container
-		.reviews-main__slider.js-slider-reviews-wrap
-			.reviews-main__list.js-slider-reviews.swiper-wrapper
+		.success-reviews__slider.js-slider-reviews-wrap
+			.success-reviews__list.js-slider-reviews.swiper-wrapper
 				each reviews in result
 					.reviews-list.swiper-slide
 						each review in reviews
 							+review(review)
-			.reviews-main__scrollbar.scrollbar.js-slider-reviews-scrollbar
+			.success-reviews__scrollbar.scrollbar.js-slider-reviews-scrollbar
