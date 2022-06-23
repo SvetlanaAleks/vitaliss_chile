@@ -69,7 +69,7 @@ const Sliders = (function () {
         slidesToScroll: 1,
         asNavFor: ".js-slider-product-for",
         dots: false,
-        // centerMode: true,
+        arrows: false,
         focusOnSelect: true,
       });
     },

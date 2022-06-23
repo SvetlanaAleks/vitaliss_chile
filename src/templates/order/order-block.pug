@@ -5,20 +5,21 @@
 				img.order-block__product.js-product-photo(src="", alt="")
 				p.order-block__name.js-product-name
 			.order-block__form
-				form.contacts-form.x_order_form(action="success.html")
-					p.contacts-form__title Оформить заказ!
+				form.contacts-form.x_order_form#order-form(action="success.html")
+					p.contacts-form__title ¡HACER UN PEDIDO!
 					.contacts-form__wrapper
 						.contacts-form__inputs
 							input.contacts-form__input.contacts-form__input--hidden.js-product-name-form(value="" name="product")
-							input.contacts-form__input(type="text" name="name" placeholder="Имя" required)
-							input.contacts-form__input(type="phone" name="tel" placeholder="Телефон" required)
+							input(type="hidden" name="chatbot_history")
+							input.contacts-form__input(type="text" name="name" placeholder="Nombre" required)
+							input.contacts-form__input(type="phone" name="tel" placeholder="Teléfono" required)
 							input.contacts-form__input(type="email" name="email" placeholder="E-mail")
-							textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Сообщение")
+							textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Mensaje")
 						.contacts-form__counter.counter
 							img.counter__photo.js-product-photo(src="", alt="")
-							p.counter__text количество
+							p.counter__text CANTIDAD
 							.counter__block
 								.counter__block-arrow.js-counter-arrow-dec <
 								.counter__num.js-counter-number 1
 								.counter__block-arrow.js-counter-arrow-inc >
-						button.contacts-form__btn.button ЗАКАЗАТЬ
+						button.contacts-form__btn.button Pedir

@@ -6,10 +6,10 @@
 			i.fico.fico-cross
 		.popup__content
 			.popup__form
-				p.popup__title!=CALLBACKPOPUP.callbackpopup_title
+				p.popup__title Le llamaremos para aclarar los detalles
 				form.form-popup(action="/", method="post")
 					.form-popup__inputs
-						input.form-popup__input(type="text" name="name" placeholder=CALLBACKPOPUP.callbackpopup_field_name)
-						input.form-popup__input(type="phone" name="tel" placeholder=CALLBACKPOPUP.callbackpopup_field_phone)
-						input.form-popup__input(type="text" name="comment" placeholder=CALLBACKPOPUP.callbackpopup_field_message)
-					button.form-popup__btn.btn!=CALLBACKPOPUP.callbackpopup_btn
+						input.form-popup__input(type="text" name="name" placeholder="Nombre")
+						input.form-popup__input(type="phone" name="tel" placeholder="Teléfono")
+						input.form-popup__input(type="text" name="comment" placeholder="Mensaje")
+					button.form-popup__btn.btn Pedir una llamada

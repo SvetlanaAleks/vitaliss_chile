@@ -1,15 +1,13 @@
-- var CONTACTS = LANG.contacts;
-
 section.contacts
 	.container
 		.contacts__form
 			form.contacts-form(action="/", method="post")
-				p.contacts-form__title!=CONTACTS.contacts_form_title
-				p.contacts-form__desc!=CONTACTS.contacts_form_description
+				p.contacts-form__title Deje su solicitud y le llamaremos
+				p.contacts-form__desc ¡Si desea que le llamemos, deje su número de teléfono y nos pondremos en contacto con usted!
 				.contacts-form__wrapper
 					.contacts-form__inputs
-						input.contacts-form__input(type="text" name="name" placeholder=CONTACTS.contacts_field_name)
-						input.contacts-form__input(type="phone" name="tel" placeholder=CONTACTS.contacts_field_phone)
-						input.contacts-form__input(type="email" name="email" placeholder=CONTACTS.contacts_field_email)
-						textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder=CONTACTS.contacts_field_message)
-					button.contacts-form__btn.button!=CONTACTS.contacts_btn
+						input.contacts-form__input(type="text" name="name" placeholder="Nombre")
+						input.contacts-form__input(type="phone" name="tel" placeholder="Teléfono")
+						input.contacts-form__input(type="email" name="email" placeholder="E-mail")
+						textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Mensaje")
+					button.contacts-form__btn.button Enviar

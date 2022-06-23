@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"/>
     <link rel="stylesheet" href="/css/main.css" type="text/css"/>
-    <title>Оформить заказ!</title>
+    <title>¡HACER UN PEDIDO!</title>
   </head>
   <body>
             <div class="menu-mobile" id="js-mobile-menu">
@@ -32,13 +32,13 @@
             <div class="nav__wrap"><a class="nav__logo" href="index.html"><img src="/img/svg/logo.svg" alt="Vitaliss"/></a>
               <div class="nav__right">
                 <ul class="nav__menu menu">
-                  <li class="menu__item"><a class="menu__link" href="catalog.html">Каталог</a></li>
-                  <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
-                  <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-                  <li class="menu__item"><a class="menu__link" href="reviews.html">Отзывы</a></li>
+                  <li class="menu__item"><a class="menu__link" href="catalog.html">Catálogo</a></li>
+                  <li class="menu__item"><a class="menu__link" href="about.html">Sobre nosotros</a></li>
+                  <li class="menu__item"><a class="menu__link" href="contacts.html">Contactos</a></li>
+                  <li class="menu__item"><a class="menu__link" href="reviews.html">Reseñas</a></li>
                 </ul>
                 <div class="nav__btn-wrap"><a class="nav__link-tel" href="tel:+56229141108">(+56) 229 141 108</a>
-                  <button class="nav__btn btn js-show-popup" data-target="#popup">Заказать звонок</button>
+                  <button class="nav__btn btn js-show-popup" data-target="#popup">Pedir una llamada</button>
                 </div>
                 <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
               </div>
@@ -52,25 +52,26 @@
             <p class="order-block__name js-product-name"></p>
           </div>
           <div class="order-block__form">
-            <form class="contacts-form x_order_form" action="success.html">
-              <p class="contacts-form__title">Оформить заказ!</p>
+            <form class="contacts-form x_order_form" id="order-form" action="success.html">
+              <p class="contacts-form__title">¡HACER UN PEDIDO!</p>
               <div class="contacts-form__wrapper">
                 <div class="contacts-form__inputs">
                   <input class="contacts-form__input contacts-form__input--hidden js-product-name-form" value="" name="product"/>
-                  <input class="contacts-form__input" type="text" name="name" placeholder="Имя" required="required"/>
-                  <input class="contacts-form__input" type="phone" name="tel" placeholder="Телефон" required="required"/>
+                  <input type="hidden" name="chatbot_history"/>
+                  <input class="contacts-form__input" type="text" name="name" placeholder="Nombre" required="required"/>
+                  <input class="contacts-form__input" type="phone" name="tel" placeholder="Teléfono" required="required"/>
                   <input class="contacts-form__input" type="email" name="email" placeholder="E-mail"/>
-                  <textarea class="contacts-form__input contacts-form__input--text" name="comment" placeholder="Сообщение"></textarea>
+                  <textarea class="contacts-form__input contacts-form__input--text" name="comment" placeholder="Mensaje"></textarea>
                 </div>
                 <div class="contacts-form__counter counter"><img class="counter__photo js-product-photo" src="" alt=""/>
-                  <p class="counter__text">количество</p>
+                  <p class="counter__text">CANTIDAD</p>
                   <div class="counter__block">
                     <div class="counter__block-arrow js-counter-arrow-dec"><</div>
                     <div class="counter__num js-counter-number">1</div>
                     <div class="counter__block-arrow js-counter-arrow-inc">></div>
                   </div>
                 </div>
-                <button class="contacts-form__btn button">ЗАКАЗАТЬ</button>
+                <button class="contacts-form__btn button">Pedir</button>
               </div>
             </form>
           </div>
@@ -82,10 +83,10 @@
         <div class="footer__wrapper"><a class="footer__logo" href="/"><img src="/img/svg/logo-w.svg" alt=""/></a>
           <div class="footer__right">
             <ul class="footer__menu menu-f">
-              <li class="menu-f__item footer__item"><a class="menu-f__link" href="catalog.html">Каталог</a></li>
-              <li class="menu-f__item footer__item"><a class="menu-f__link" href="about.html">О нас</a></li>
-              <li class="menu-f__item footer__item"><a class="menu-f__link" href="contacts.html">Контакты</a></li>
-              <li class="menu-f__item footer__item"><a class="menu-f__link" href="#">Отзывы</a></li>
+              <li class="menu-f__item footer__item"><a class="menu-f__link" href="catalog.html">Catálogo</a></li>
+              <li class="menu-f__item footer__item"><a class="menu-f__link" href="about.html">Sobre nosotros</a></li>
+              <li class="menu-f__item footer__item"><a class="menu-f__link" href="contacts.html">Contactos</a></li>
+              <li class="menu-f__item footer__item"><a class="menu-f__link" href="#">Reseñas</a></li>
             </ul><a class="footer__link" href="mailto:info@vitaliss.group">info@vitaliss.group</a>
           </div>
         </div>
@@ -96,14 +97,14 @@
         <div class="popup__close js-close"><i class="fico fico-cross"></i></div>
         <div class="popup__content">
           <div class="popup__form">
-            <p class="popup__title">Мы Вам перезвоним для&nbsp;уточнения деталей</p>
+            <p class="popup__title">Le llamaremos para aclarar los detalles</p>
             <form class="form-popup" action="/" method="post">
               <div class="form-popup__inputs">
-                <input class="form-popup__input" type="text" name="name" placeholder="Имя"/>
-                <input class="form-popup__input" type="phone" name="tel" placeholder="Телефон"/>
-                <input class="form-popup__input" type="text" name="comment" placeholder="Сообщение"/>
+                <input class="form-popup__input" type="text" name="name" placeholder="Nombre"/>
+                <input class="form-popup__input" type="phone" name="tel" placeholder="Teléfono"/>
+                <input class="form-popup__input" type="text" name="comment" placeholder="Mensaje"/>
               </div>
-              <button class="form-popup__btn btn">Заказать звонок</button>
+              <button class="form-popup__btn btn">Pedir una llamada</button>
             </form>
           </div>
         </div>

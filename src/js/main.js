@@ -7,6 +7,7 @@ import Popup from "./modules/Popup";
 import Menu from "./modules/Menu";
 import layout from "./global/layout";
 import Order from "./modules/Order";
+import "./global/youtube";
 
 $(function () {
   var year = new Date().getFullYear();

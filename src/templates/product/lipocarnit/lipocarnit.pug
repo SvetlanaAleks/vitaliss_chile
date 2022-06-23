@@ -2,67 +2,7 @@ include ../../mixins/product
 -
 	const products = [
 		{
-			label: 'ХИТ',
-			srcPhoto: 'img/urotrin.png',
-			name: 'UROTRIN',
-			stars: [
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star-black.svg',
-					type: 'empty'
-				}
-			],
-			text: '231 отзыв',
-			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
-			link: '#'
-		},
-		{
-			label: 'ХИТ',
-			srcPhoto: 'img/hondrexil.png',
-			name: 'HONDREXIL',
-			stars: [
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star-black.svg',
-					type: 'empty'
-				}
-			],
-			text: '231 отзыв',
-			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
-			link: '#'
-		},
-		{
-			label: 'ХИТ',
+			label: 'ÉXITO',
 			srcPhoto: 'img/biorecin.png',
 			name: 'BIORECIN',
 			stars: [
@@ -87,20 +27,80 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'Las cápsulas antienvejecimiento para nutrir y regenerar las células de la piel',
+			link: 'biorecin.html'
+		},
+		{
+			label: 'ÉXITO',
+			srcPhoto: 'img/oсulax.png',
+			name: 'Oсulax',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 reseñas',
+			desc: 'El complejo de vitaminas y minerales para recuperar la agudeza visual y prevenir la pérdida de visión',
+			link: 'oculax.html'
+		},
+		{
+			label: 'ÉXITO',
+			srcPhoto: 'img/hondrexil.png',
+			name: 'HONDREXIL',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 reseñas',
+			desc: 'Las cápsulas para diferentes tipos de dolor e inflamación de las articulaciones',
+			link: 'hondrexil.html'
 		},
 	];
 
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/") INICIO
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html") Catálogo
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=beauty") Для КРАСОТЫ
+			a.breadcrumbs__link(href="catalog.html?id=beauty") Para la belleza
 			span.breadcrumbs__line /
 			span.breadcrumbs__main Lipocarnit
 		.product-item__wrapper
@@ -112,6 +112,8 @@ section.product-item
 						img(src="img/lipocarnit_1.jpg", alt="Lipocarnit")
 					.slider-prod__nav-item
 						img(src="img/lipocarnit_2.jpg", alt="Lipocarnit")
+					.slider-prod__nav-item
+						img(src="img/lipocarnit_3.jpg", alt="Biorecin")
 				.slider-prod__for.js-slider-product-for
 					.slider-prod__for-item.slider-prod__for-item--main-photo
 						img(src="img/lipocarnit.png", alt="Lipocarnit")
@@ -119,6 +121,9 @@ section.product-item
 						img(src="img/lipocarnit_1.jpg", alt="Lipocarnit")
 					.slider-prod__for-item
 						img(src="img/lipocarnit_2.jpg", alt="Lipocarnit")
+					.slider-prod__for-item
+						.youtube(data-embed="Hsznlhgsf3E")
+							.play
 			.product-item__info
 				h2.product-item__name Lipocarnit
 				p.product-item__desc 
@@ -129,43 +134,43 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
-					p.product-item__rating-text 225 отзывов
+					p.product-item__rating-text 225 reseñas
 				ul.product-item__list.product-list
-					li.product-list__item Направление: Похудение
-					li.product-list__item Форм-фактор: Капсулы
-					li.product-list__item Объем: 21 шт.
-				a.product-item__btn.button(href="order.html?id=lipocarnit") Заказать
-				p.product-item__text Комплекс витаминов и экстрактов для активизации обменных процессов и снижения веса
+					li.product-list__item Esfera: Adelgazamiento
+					li.product-list__item Forma: Cápsulas
+					li.product-list__item Volumen: 21 pzs.
+				a.product-item__btn.button(href="order.html?id=lipocarnit") Pedir
+				p.product-item__text El complejo de vitaminas y extractos para la activación del metabolismo y la pérdida de peso
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl Descripción
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Капсулы для похудения, содержат растительные компоненты и витамины которые помогают нормализовать обмен веществ, улучшить метаболизм жиров, отрегулировать пищеварение и аппетит.
+						p.specification__text.js-info-accordeon Las cápsulas de adelgazamiento contienen ingredientes herbales y vitaminas que ayudan a normalizar el metabolismo, mejorar el metabolismo de las grasas, regular la digestión y el apetito
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl Composición
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Битартрат холина, желатин (из капсулы), порошок белой фасоли (Phaseolus vulgaris), инулин, кукурузный мальтодекстрин, порошок годжи (Lycium barbarum L.), стеарат магния, пантотенат кальция (витамин B5), ниацинамид (витамин B3), пиридоксина гидрохлорид (витамин B6), мононитрат тиамина (витамин B1), рибофлавин (витамин B2), фолиевая кислота (витамин B9), цианокобаламин (витамин B12).
+						p.specification__text.js-info-accordeon bitartrato de colina, gelatina (de la cápsula), polvo de judías blancas (Phaseolus vulgaris), inulina, maltodextrina de maíz, polvo de goji (Lycium barbarum L. ), estearato de magnesio, pantotenato de calcio (vitamina B5), niacinamida (vitamina B3), clorhidrato de piridoxina (vitamina B6), mononitrato de tiamina (vitamina B1), riboflavina (vitamina B2), ácido fólico (vitamina B9), cianocobalamina (vitamina B12)
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl Uso
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день).
+						p.specification__text.js-info-accordeon Se recomienda tomar 3 cápsulas con el desayuno. La ingesta máxima diaria: 1 porción (no más de 3 cápsulas al día)
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl Información adicional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item Производитель: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
+								li.product-list__item Fabricante: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
 								//- li.product-list__item Дата регистрации: 10.04.2020
 								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
-								li.product-list__item.mb Срок годности: 18 месяцев
-								li.product-list__item Условия хранения: хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой.
+								li.product-list__item.mb Fecha de caducidad: 18 meses
+								li.product-list__item Condiciones de almacenamiento: Almacenar en un lugar fresco (≤25°C) y seco (≤60% HR) con la tapa puesta
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Отзывы
+							h3.specification__ttl Reseñas
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-item__review.review-small
@@ -212,7 +217,7 @@ section.product-item
 								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
 					.specification.specification--recomm
 						.specification__top
-							h3.specification__ttl С этим товаром покупают
+							h3.specification__ttl Compran con este producto
 						.specification__text
 							.specification__products
 								each product in products

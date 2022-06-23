@@ -2,9 +2,9 @@ include ../../mixins/product
 -
 	const products = [
 		{
-			label: 'ХИТ',
-			srcPhoto: 'img/urotrin.png',
-			name: 'UROTRIN',
+			label: 'ÉXITO',
+			srcPhoto: 'img/normaten.png',
+			name: 'Normaten',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -27,14 +27,14 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'El remedio para la normalización de la presión arterial y el apoyo al sistema cardiovascular',
+			link: 'normaten.html'
 		},
 		{
-			label: 'ХИТ',
-			srcPhoto: 'img/hondrexil.png',
-			name: 'HONDREXIL',
+			label: 'ÉXITO',
+			srcPhoto: 'img/lipocarnit.png',
+			name: 'LIPOCARNIT',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -57,14 +57,14 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'El complejo de vitaminas y extractos para la activación del metabolismo y la pérdida de peso',
+			link: 'lipocarnit.html'
 		},
 		{
-			label: 'ХИТ',
-			srcPhoto: 'img/biorecin.png',
-			name: 'BIORECIN',
+			label: 'ÉXITO',
+			srcPhoto: 'img/dialine.png',
+			name: 'Dialine',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -87,20 +87,20 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'El remedio con extractos de hierbas para normalizar el nivel de glucosa en la sangre',
+			link: 'dialine.html'
 		},
 	];
 
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/") INICIO
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html") Catálogo
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Для ЗДОРОВЬЯ
+			a.breadcrumbs__link(href="catalog.html?id=health") Para la salud
 			span.breadcrumbs__line /
 			span.breadcrumbs__main HONFREXIL
 		.product-item__wrapper
@@ -112,6 +112,8 @@ section.product-item
 						img(src="img/hondrexil_1.jpg", alt="HONFREXIL")
 					.slider-prod__nav-item
 						img(src="img/hondrexil_2.jpg", alt="HONFREXIL")
+					.slider-prod__nav-item
+						img(src="img/hondrexil_3.jpg", alt="HONFREXIL")
 				.slider-prod__for.js-slider-product-for
 					.slider-prod__for-item.slider-prod__for-item--main-photo
 						img(src="img/hondrexil.png", alt="HONFREXIL")
@@ -119,9 +121,11 @@ section.product-item
 						img(src="img/hondrexil_1.jpg", alt="HONFREXIL")
 					.slider-prod__for-item
 						img(src="img/hondrexil_2.jpg", alt="HONFREXIL")
+					.slider-prod__for-item
+						.youtube(data-embed="Hsznlhgsf3E")
+							.play
 			.product-item__info
 				h2.product-item__name HONFREXIL
-				//- p.product-item__desc join support
 				.product-item__rating
 					.product-item__rating-stars
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
@@ -129,45 +133,45 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
-					p.product-item__rating-text 231 отзыв
+					p.product-item__rating-text 231 reseñas
 				ul.product-item__list.product-list
-					li.product-list__item Направление: Суставы
-					li.product-list__item Форм-фактор: Капсулы
-					li.product-list__item Объем: 21 шт.
-				a.product-item__btn.button(href="order.html?id=hondrexil") Заказать
-				p.product-item__text Капсулы для устранения разных типов боли и воспалений в суставах
+					li.product-list__item Esfera: Articulaciones
+					li.product-list__item Forma: Cápsulas
+					li.product-list__item Volumen: 21 pzs.
+				a.product-item__btn.button(href="order.html?id=hondrexil") Pedir
+				p.product-item__text Las cápsulas para diferentes tipos de dolor e inflamación de las articulaciones
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl Descripción
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Пищевая добавка с растительными ингредиентами для нормализации работы опорно-двигательной системы. Растительные компоненты влияют  на снижение боли и подвижность суставов.
+						p.specification__text.js-info-accordeon El suplemento nutricional con ingredientes herbales para normalizar el sistema musculoesquelético. Los ingredientes a base de plantas ayudan a reducir el dolor y a mejorar la movilidad de las articulaciones.
 					.specification
 						.specification__top.js-btn-accordeon
 							h3.specification__ttl Состав
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Гидролизованный коллаген, желатин (из капсулы), цитрат магния, порошок куркумы (Curcuma longa), порошок хвоща полевого (Equisetum arvense), аскорбиновая кислота (витамин C), кукурузный мальтодекстрин, рыбий жир в порошке (порошок Омега 3), стеарат магния, dl-альфа-токоферола ацетат (вит. E), аморфный диоксид кремния.
+						p.specification__text.js-info-accordeon Colágeno hidrolizado, gelatina (de la cápsula), citrato de magnesio, cúrcuma en polvo (Curcuma longa), cola de caballo en polvo (Equisetum arvense), ácido ascórbico (vitamina C), maltodextrina de maíz, aceite de pescado en polvo (Omega 3 en polvo), estearato de magnesio, acetato de dl-tocoferol (vitamina E), dióxido de silicio amorfo.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl Uso
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon 3 капсулы во время завтрака. Нельзя превышать дозу (3 капсулы).
+						p.specification__text.js-info-accordeon 3 cápsulas con el desayuno. No debe superarse la dosis (3 cápsulas).
 							br
-							| Ограничения: дети до 8 лет.
+							| Limitaciones: niños menores de 8 años.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl Información adicional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item Производитель:  SOCIEDAD COMERCIAL Y DE ASESORIAS UNITRADE SpA. 
+								li.product-list__item Fabricante: SOCIEDAD COMERCIAL Y DE ASESORIAS UNITRADE SpA. 
 								//- li.product-list__item Дата регистрации: 10.04.2020
 								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
-								li.product-list__item.mb Срок годности: 18 месяцев
-								li.product-list__item Условия хранения: хранить в сухом, недоступном для детей месте, при температуре не выше +25°С и  относительной влажности 60%.
+								li.product-list__item.mb Fecha de caducidad: 18 meses
+								li.product-list__item Condiciones de almacenamiento: almacenar en un lugar seco y fuera del alcance de los niños, a una temperatura no superior a +25°C y una humedad relativa del 60%.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Отзывы
+							h3.specification__ttl Reseñas
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-item__review.review-small
@@ -214,7 +218,7 @@ section.product-item
 								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
 					.specification.specification--recomm
 						.specification__top
-							h3.specification__ttl С этим товаром покупают
+							h3.specification__ttl Compran con este producto
 						.specification__text
 							.specification__products
 								each product in products

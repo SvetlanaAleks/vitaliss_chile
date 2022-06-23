@@ -2,9 +2,9 @@ include ../../mixins/product
 -
 	const products = [
 		{
-			label: 'ХИТ',
-			srcPhoto: 'img/urotrin.png',
-			name: 'UROTRIN',
+			label: 'ÉXITO',
+			srcPhoto: 'img/lipocarnit.png',
+			name: 'LIPOCARNIT',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -28,13 +28,43 @@ include ../../mixins/product
 				}
 			],
 			text: '231 отзыв',
-			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
-			link: '#'
+			desc: 'El complejo de vitaminas y extractos para la activación del metabolismo y la pérdida de peso',
+			link: 'lipocarnit.html'
+		},
+				{
+			label: 'ÉXITO',
+			srcPhoto: 'img/oсulax.png',
+			name: 'Oсulax',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 отзыв',
+			desc: 'El complejo de vitaminas y minerales para recuperar la agudeza visual y prevenir la pérdida de visión',
+			link: 'oculax.html'
 		},
 		{
-			label: 'ХИТ',
-			srcPhoto: 'img/hondrexil.png',
-			name: 'HONDREXIL',
+			label: 'ÉXITO',
+			srcPhoto: 'img/wortex.png',
+			name: 'Wortex',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -58,49 +88,19 @@ include ../../mixins/product
 				}
 			],
 			text: '231 отзыв',
-			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
-			link: '#'
-		},
-		{
-			label: 'ХИТ',
-			srcPhoto: 'img/biorecin.png',
-			name: 'BIORECIN',
-			stars: [
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star-black.svg',
-					type: 'empty'
-				}
-			],
-			text: '231 отзыв',
-			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
-			link: '#'
+			desc: 'Las cápsulas para la limpieza segura del cuerpo de parásitos y la recuperación de las funciones del sistema digestivo',
+			link: 'wortex.html'
 		},
 	];
 
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/") INICIO
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html") Catálogo
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=beauty") Для КРАСОТЫ
+			a.breadcrumbs__link(href="catalog.html?id=beauty") Para la belleza
 			span.breadcrumbs__line /
 			span.breadcrumbs__main Biorecin
 		.product-item__wrapper
@@ -112,6 +112,8 @@ section.product-item
 						img(src="img/biorecin_1.jpg", alt="Biorecin")
 					.slider-prod__nav-item
 						img(src="img/biorecin_2.jpg", alt="Biorecin")
+					.slider-prod__nav-item
+						img(src="img/biorecin_3.jpg", alt="Biorecin")
 				.slider-prod__for.js-slider-product-for
 					.slider-prod__for-item.slider-prod__for-item--main-photo
 						img(src="img/biorecin.png", alt="Biorecin")
@@ -119,9 +121,11 @@ section.product-item
 						img(src="img/biorecin_1.jpg", alt="Biorecin")
 					.slider-prod__for-item
 						img(src="img/biorecin_2.jpg", alt="Biorecin")
+					.slider-prod__for-item
+						.youtube(data-embed="Hsznlhgsf3E")
+							.play
 			.product-item__info
 				h2.product-item__name Biorecin
-				//- p.product-item__desc Bio-Age Cream
 				.product-item__rating
 					.product-item__rating-stars
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
@@ -129,45 +133,45 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
-					p.product-item__rating-text 231 отзыв
+					p.product-item__rating-text 231 reseñas
 				ul.product-item__list.product-list
-					li.product-list__item Направление: Омоложение
-					li.product-list__item Форм-фактор: Капсулы
-					li.product-list__item Объем: 21 шт.
-				a.product-item__btn.button(href="order.html?id=biorecin") Заказать
-				p.product-item__text Омолаживающие капсулы для питания и регенерации клеток кожи
+					li.product-list__item Esfera: Rejuvenecimiento
+					li.product-list__item Forma: Cápsulas
+					li.product-list__item Volumen: 21 pzs.
+				a.product-item__btn.button(href="order.html?id=biorecin") Pedir
+				p.product-item__text Las cápsulas antienvejecimiento para nutrir y regenerar las células de la piel
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl Descripción
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Капсулы для омоложения кожи содержат растительные компоненты и витамины которые помогают улучшить питание и регенерацию клеток кожи. Способствует восстановлению коллагеновых и эластиновых волокон, благоприятно влияет на упругость и тонус лица.
+						p.specification__text.js-info-accordeon Las cápsulas para el rejuvenecimiento de la piel contienen ingredientes herbales y vitaminas que ayudan a mejorar la nutrición y la regeneración de las células de la piel. Ayudan a regenerar las fibras de colágeno y elastina, tienen un efecto beneficioso sobre la firmeza y el tono del rostro.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl Composición
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Коллаген, биотин, витамин Е, шиповник.
+						p.specification__text.js-info-accordeon Colágeno, biotina, vitamina E, rosa mosqueta.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl Uso
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день).
+						p.specification__text.js-info-accordeon Se recomienda tomar 3 cápsulas con el desayuno. Ingesta máxima diaria: 1 porción (no más de 3 cápsulas al día).
 							br
-							| Ограничения: дети до 8 лет
+							| Limitaciones: niños menores de 8 años.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl Información adicional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item Производитель:  Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
+								li.product-list__item Fabricante:  Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
 								//- li.product-list__item Дата регистрации: 10.04.2020
 								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
-								li.product-list__item.mb Срок годности: 18 месяцев
-								li.product-list__item Условия хранения: хранить в прохладном (≤25 ° C) и сухом (≤60% RH) месте с закрытой крышкой
+								li.product-list__item.mb Fecha de caducidad: 18 meses
+								li.product-list__item Condiciones de almacenamiento: almacenar en un lugar fresco (≤25°C) y seco (≤60% HR) con la tapa puesta.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Отзывы
+							h3.specification__ttl Reseñas
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-item__review.review-small
@@ -214,7 +218,7 @@ section.product-item
 								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
 					.specification.specification--recomm
 						.specification__top
-							h3.specification__ttl С этим товаром покупают
+							h3.specification__ttl Compran con este producto
 						.specification__text
 							.specification__products
 								each product in products
