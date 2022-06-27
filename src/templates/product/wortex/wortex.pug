@@ -3,66 +3,6 @@ include ../../mixins/product
 	const products = [
 		{
 			label: 'ÉXITO',
-			srcPhoto: 'img/urotrin.png',
-			name: 'UROTRIN',
-			stars: [
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star-black.svg',
-					type: 'empty'
-				}
-			],
-			text: '231 отзыв',
-			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
-			link: '#'
-		},
-		{
-			label: 'ÉXITO',
-			srcPhoto: 'img/hondrexil.png',
-			name: 'HONDREXIL',
-			stars: [
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star.svg',
-					type: 'full'
-				},
-				{
-					src: 'img/svg/star-black.svg',
-					type: 'empty'
-				}
-			],
-			text: '231 отзыв',
-			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
-			link: '#'
-		},
-		{
-			label: 'ÉXITO',
 			srcPhoto: 'img/biorecin.png',
 			name: 'BIORECIN',
 			stars: [
@@ -87,9 +27,69 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'Las cápsulas antienvejecimiento para nutrir y regenerar las células de la piel',
+			link: 'biorecin.html'
+		},
+		{
+			label: 'ÉXITO',
+			srcPhoto: 'img/lipocarnit.png',
+			name: 'LIPOCARNIT',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 reseñas',
+			desc: 'El complejo de vitaminas y extractos para la activación del metabolismo y la pérdida de peso',
+			link: 'lipocarnit.html'
+		},
+		{
+			label: 'ÉXITO',
+			srcPhoto: 'img/normaten.png',
+			name: 'Normaten',
+			stars: [
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star.svg',
+					type: 'full'
+				},
+				{
+					src: 'img/svg/star-black.svg',
+					type: 'empty'
+				}
+			],
+			text: '231 reseñas',
+			desc: 'El remedio para la normalización de la presión arterial y el apoyo al sistema cardiovascular',
+			link: 'normaten.html'
 		},
 	];
 
@@ -97,11 +97,11 @@ include ../../mixins/product
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/") INICIO
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html") Catálogo
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Для ЗДОРОВЬЯ
+			a.breadcrumbs__link(href="catalog.html?id=health") Para la salud
 			span.breadcrumbs__line /
 			span.breadcrumbs__main Wortex
 		.product-item__wrapper
@@ -113,6 +113,8 @@ section.product-item
 						img(src="img/wortex_1.jpg", alt="Wortex")
 					.slider-prod__nav-item
 						img(src="img/wortex_2.jpg", alt="Wortex")
+					.slider-prod__nav-item
+						img(src="img/wortex_3.jpg", alt="Wortex")
 				.slider-prod__for.js-slider-product-for
 					.slider-prod__for-item.slider-prod__for-item--main-photo
 						img(src="img/wortex.png", alt="Wortex")
@@ -120,6 +122,9 @@ section.product-item
 						img(src="img/wortex_1.jpg", alt="Wortex")
 					.slider-prod__for-item
 						img(src="img/wortex_2.jpg", alt="Wortex")
+					.slider-prod__for-item
+						.youtube(data-embed="t17D3vPSaRo")
+							.play
 			.product-item__info
 				h2.product-item__name Wortex
 				.product-item__rating
@@ -129,45 +134,45 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star-black.svg", alt="")
-					p.product-item__rating-text 212 отзывов
+					p.product-item__rating-text 212 reseñas
 				ul.product-item__list.product-list
-					li.product-list__item Направление: Паразиты
-					li.product-list__item Форм-фактор: Капсулы
-					li.product-list__item Объем: 21 шт.
-				a.product-item__btn.button(href="order.html?id=wortex") Заказать
-				p.product-item__text Капсулы для безопасного очищения организма от паразитов и восстановления функций системы пищеварения
+					li.product-list__item Esfera: Parásitos
+					li.product-list__item Forma: Cápsulas
+					li.product-list__item Volumen: 21 pzs.
+				a.product-item__btn.button(href="order.html?id=wortex") Pedir
+				p.product-item__text Las cápsulas para la limpieza segura del cuerpo de parásitos y la recuperación de las funciones del sistema digestivo
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl Descripción
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Комплекс растительных компонентов для нормализации состояния организма, избавление от различных видов паразитов, очищает печень и выступает как детокс-формула, способствует регуляции работы ЖКТ, повышению иммунитета.
+						p.specification__text.js-info-accordeon El complejo de ingredientes herbales para normalizar el estado del organismo, eliminar diferentes tipos de parásitos, purificar el hígado y servir de fórmula de desintoxicación, ayudar a regular el sistema gastrointestinal, mejorar la inmunidad.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl Composición
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Порошок белого чеснока (Allium neapolitanum), порошок семян тыквы (Cucurbita moschata), желатин (из капсулы), кукурузный мальтодекстрин, порошок граната (Punica granatum L.), порошок кокосового сока (Cocos nucifera L.), порошок лимона (Citrus × лимон), стеарат магния, порошок черного перца (Piper nigrum), аморфный диоксид кремния.
+						p.specification__text.js-info-accordeon Ajo blanco en polvo (Allium neapolitanum), semilla de calabaza en polvo (Cucurbita moschata), gelatina (de cápsula), maltodextrina de maíz, granada en polvo (Punica granatum L.), zumo de coco en polvo (Cocos nucifera L.), limón en polvo (Citrus × lemon), estearato de magnesio, pimienta negra en polvo (Piper nigrum), dióxido de silicio amorfo.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl Uso
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Принимать по 1 капсуле 3 раза в день. Максимальная суточная доза - 3 капсулы.
+						p.specification__text.js-info-accordeon 3 cápsulas con el desayuno. No debe superarse la dosis (3 cápsulas).
 							br
-							| Ограничения: дети до 8 лет.
+							| Limitaciones: niños menores de 8 años.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl Información adicional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item Производитель: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
+								li.product-list__item Fabricante: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
 								//- li.product-list__item Дата регистрации: 10.04.2020
 								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
-								li.product-list__item.mb Срок годности: 18 месяцев
-								li.product-list__item Условия хранения: хранить при температуре от 0°С до 25°С, вдали от прямых солнечных лучей и влаги.
+								li.product-list__item.mb Fecha de caducidad: 18 meses
+								li.product-list__item Condiciones de almacenamiento: almacenar entre 0°C y 25°C, lejos de la luz solar directa y de la humedad.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Отзывы
+							h3.specification__ttl Reseñas
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-item__review.review-small
@@ -214,7 +219,7 @@ section.product-item
 								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
 					.specification.specification--recomm
 						.specification__top
-							h3.specification__ttl С этим товаром покупают
+							h3.specification__ttl Compran con este producto
 						.specification__text
 							.specification__products
 								each product in products

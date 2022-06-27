@@ -3,8 +3,8 @@ include ../../mixins/product
 	const products = [
 		{
 			label: 'ÉXITO',
-			srcPhoto: 'img/urotrin.png',
-			name: 'UROTRIN',
+			srcPhoto: 'img/oсulax.png',
+			name: 'Oсulax',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -27,14 +27,14 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Капсулы с натуральным конопляным маслом, для поддержания иммунной, сердечно сосудистой, опорно-костной, мочеполовой и  эндокринной систем',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'El complejo de vitaminas y minerales para recuperar la agudeza visual y prevenir la pérdida de visión',
+			link: 'oculax.html'
 		},
 		{
 			label: 'ÉXITO',
-			srcPhoto: 'img/hondrexil.png',
-			name: 'HONDREXIL',
+			srcPhoto: 'img/otovix.png',
+			name: 'Otovix',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -57,14 +57,14 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Капсулы для устранения разных типов боли и воспалений в суставах',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'El complejo para mejorar las funciones auditivas con una fórmula equilibrada de vitaminas y minerales',
+			link: 'otovix.html'
 		},
 		{
 			label: 'ÉXITO',
-			srcPhoto: 'img/biorecin.png',
-			name: 'BIORECIN',
+			srcPhoto: 'img/lipocarnit.png',
+			name: 'LIPOCARNIT',
 			stars: [
 				{
 					src: 'img/svg/star.svg',
@@ -87,9 +87,9 @@ include ../../mixins/product
 					type: 'empty'
 				}
 			],
-			text: '231 отзыв',
-			desc: 'Омолаживающие капсулы для питания и регенерации клеток кожи',
-			link: '#'
+			text: '231 reseñas',
+			desc: 'El complejo de vitaminas y extractos para la activación del metabolismo y la pérdida de peso',
+			link: 'lipocarnit.html'
 		},
 	];
 
@@ -97,11 +97,11 @@ include ../../mixins/product
 section.product-item
 	.container
 		.product-item__breadcrumbs.breadcrumbs
-			a.breadcrumbs__link(href="/") Главная
+			a.breadcrumbs__link(href="/") INICIO
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html") Каталог
+			a.breadcrumbs__link(href="catalog.html") Catálogo
 			span.breadcrumbs__line /
-			a.breadcrumbs__link(href="catalog.html?id=health") Здоровье
+			a.breadcrumbs__link(href="catalog.html?id=health") Para la salud
 			span.breadcrumbs__line /
 			span.breadcrumbs__main Normaten
 		.product-item__wrapper
@@ -113,6 +113,8 @@ section.product-item
 						img(src="img/normaten_1.jpg", alt="Normaten")
 					.slider-prod__nav-item
 						img(src="img/normaten_2.jpg", alt="Normaten")
+					.slider-prod__nav-item
+						img(src="img/normaten_3.jpg", alt="Normaten")
 				.slider-prod__for.js-slider-product-for
 					.slider-prod__for-item.slider-prod__for-item--main-photo
 						img(src="img/normaten.png", alt="Normaten")
@@ -120,6 +122,9 @@ section.product-item
 						img(src="img/normaten_1.jpg", alt="Normaten")
 					.slider-prod__for-item
 						img(src="img/normaten_2.jpg", alt="Normaten")
+					.slider-prod__for-item
+						.youtube(data-embed="X57_0xqTwS8")
+							.play
 			.product-item__info
 				h2.product-item__name Normaten
 				.product-item__rating
@@ -129,43 +134,43 @@ section.product-item
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
 						img.product-item__rating-star(src="img/svg/star.svg", alt="")
-					p.product-item__rating-text 219 отзывов
+					p.product-item__rating-text 219 reseñas
 				ul.product-item__list.product-list
-					li.product-list__item Направление: Гипертония
-					li.product-list__item Форм-фактор: Капсулы
-					li.product-list__item Объем: 21 шт.
-				a.product-item__btn.button(href="order.html?id=normaten") Заказать
-				p.product-item__text Средство для нормализации давления и поддержки работы сердечно-сосудистой системы
+					li.product-list__item Esfera: Hipertensión
+					li.product-list__item Forma: Cápsulas
+					li.product-list__item Volumen: 21 pzs.
+				a.product-item__btn.button(href="order.html?id=normaten") Pedir
+				p.product-item__text El remedio para la normalización de la presión arterial y el apoyo al sistema cardiovascular
 				.product-item__description.js-accordeon
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Описание
+							h3.specification__ttl Descripción
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Капсулы при гипертонии, содержат растительные компоненты и витамины которые помогают нормализовать уровень артериального давления, уровень холестерина и работу сердечно-сосудистой системы.
+						p.specification__text.js-info-accordeon Las cápsulas para la hipertensión con ingredientes herbales y vitaminas que ayudan a normalizar la presión arterial, el nivel de colesterol y la función cardiovascular.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Состав
+							h3.specification__ttl Composición
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Цитрат магния, желатин (из капсулы), кукурузный мальтодекстрин, порошок белого чеснока (Allium neapolitanum), порошок морских водорослей (Ficus sp), стеарат магния, DL-альфа-токоферола ацетат (витамин E), ниацинамид ( Витамин B3), гидрохлорид пиридоксина (витамин B6), фолиевая кислота (витамин B9), цианокобаламин (витамин B12).
+						p.specification__text.js-info-accordeon Citrato de magnesio, gelatina (de la cápsula), maltodextrina de maíz, canela en polvo (Cinnamomum verum J.Presl), aloe vera en polvo (Aloe ferox), moringa en polvo (Moringa oleifera), ácido ascórbico (vitamina C) , ESTEVIA, estearato de magnesio, mononitrato de tiamina (vitamina B1), colecalciferol (vitamina D), picolinato de cromo.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Применение
+							h3.specification__ttl Uso
 							i.fico.fico-cross
-						p.specification__text.js-info-accordeon Рекомендуется принимать 3 капсулы NORMATEN во время завтрака. Максимальное суточное потребление: 1 порция (не более 3 капсул в день).
+						p.specification__text.js-info-accordeon Se recomienda tomar 3 cápsulas con el desayuno. Ingesta máxima diaria: 1 porción (no más de 3 cápsulas al día).
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Доп. информация
+							h3.specification__ttl Información adicional
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-list
-								li.product-list__item Производитель: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
+								li.product-list__item Fabricante: Laboratorio Internacional Pharmacorp SBO S.A. Volcán Lascar Poniente 784, Pudahuel, Región Metropolitana – Chile
 								//- li.product-list__item Дата регистрации: 10.04.2020
 								//- li.product-list__item.mb Номер сертификата ЕАС: ЕАЭС N RU Д-RU.ПX01.В.12864/20
-								li.product-list__item.mb Срок годности: 18 месяцев
-								li.product-list__item Условия хранения: хранить в прохладном (≤25°C) и сухом (≤60% RH) месте с закрытой крышкой.
+								li.product-list__item.mb Fecha de caducidad: 18 meses
+								li.product-list__item Almacenar en un lugar fresco (≤25°C) y seco (≤60% HR) con la tapa puesta.
 					.specification
 						.specification__top.js-btn-accordeon
-							h3.specification__ttl Отзывы
+							h3.specification__ttl Reseñas
 							i.fico.fico-cross
 						.specification__text.js-info-accordeon
 							.product-item__review.review-small
@@ -212,7 +217,7 @@ section.product-item
 								p.review-small__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dignissimos distinctio dolores eum impedit laudantium nam officia quaerat quam quasi quod recusandae similique sunt temporibus vel. Molestiae quidem totam ullam?
 					.specification.specification--recomm
 						.specification__top
-							h3.specification__ttl С этим товаром покупают
+							h3.specification__ttl Compran con este producto
 						.specification__text
 							.specification__products
 								each product in products
