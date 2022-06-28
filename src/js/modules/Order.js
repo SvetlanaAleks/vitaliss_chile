@@ -1,3 +1,5 @@
+import { productsInfo } from "../data/products_info";
+
 const Order = (function () {
   "use strict";
   const productResidue = $(".js-product-residue");
@@ -37,18 +39,22 @@ const Order = (function () {
         updValueChatbotHistory();
       });
     },
-    showOrderProduct: function () {
-      var paramdId = getParameterByName("id");
+    createOrderForm: function () {
+      const productName = getParameterByName("id");
 
       const object = {
-        product: paramdId,
+        product: productName,
       };
       data.push(object);
 
-      if (paramdId) {
-        $(".js-product-name").html(paramdId);
-        $(".js-product-photo").attr("src", `img/${paramdId}.png`);
-        $(".js-product-name-form").val(paramdId);
+      if (productName) {
+        $(".js-product-name").html(productName);
+        $(".js-product-photo").attr("src", `img/${productName}.png`);
+        $(".js-product-name-form").val(productName);
+
+        const productInfo = productsInfo[`${productName}`];
+        $(`input[name='campaign_id']`).val(productInfo.campaign_id);
+        $(`input[name='landing_id']`).val(productInfo.landing_id);
       }
     },
     choiceCountProduct: function () {
@@ -87,10 +93,10 @@ const Order = (function () {
       }, 12000);
     },
     init: function () {
-      Order.showOrderProduct();
+      Order.createOrderForm();
       Order.choiceCountProduct();
       Order.createSuccessPage();
-      Order.submitForm();
+      // Order.submitForm();
       Order.showResiudePack();
     },
   };

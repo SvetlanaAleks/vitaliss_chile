@@ -5,14 +5,13 @@
 				img.order-block__product.js-product-photo(src="", alt="")
 				p.order-block__name.js-product-name
 			.order-block__form
-				form.contacts-form.x_order_form#order-form(action="success.html")
+				form.contacts-form.x_order_form#order-form(action="https://tracker.everad.com/conversion/new" method="post")
 					p.contacts-form__title ¡HACER UN PEDIDO!
 					.contacts-form__wrapper
 						.contacts-form__inputs
 							input.contacts-form__input.contacts-form__input--hidden.js-product-name-form(value="" name="product")
-							input(type="hidden" name="chatbot_history")
 							input.contacts-form__input(type="text" name="name" placeholder="Nombre" required)
-							input.contacts-form__input(type="phone" name="tel" placeholder="Teléfono" required)
+							input.contacts-form__input(type="text" name="phone" placeholder="Teléfono" required)
 							input.contacts-form__input(type="email" name="email" placeholder="E-mail")
 							textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Mensaje")
 						.contacts-form__counter.counter
@@ -22,4 +21,13 @@
 								.counter__block-arrow.js-counter-arrow-dec <
 								.counter__num.js-counter-number 1
 								.counter__block-arrow.js-counter-arrow-inc >
-						button.contacts-form__btn.button Pedir
+						button.contacts-form__btn.button(type="submit") Pedir
+						input(type='hidden' name='campaign_id' value='')
+						input(type='hidden' name='es_list_id' value='')
+						input(type='hidden' name='chatbot_history' value='{}')
+						input(type='hidden' name='sid5' value='{subid}')
+						input(type='hidden' name='landing_id' value='')
+						input(type='hidden' name='country_code' value='CZ')
+						input(type='hidden' name='redirect_url' value='subscribe.html')
+
+

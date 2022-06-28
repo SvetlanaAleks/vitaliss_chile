@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css"/>
     <link rel="stylesheet" href="/css/main.css" type="text/css"/>
-    <title>Vitaliss - Reseñas</title>
+    <title>¡GRACIAS POR SU PEDIDO!</title>
   </head>
   <body>
             <div class="menu-mobile" id="js-mobile-menu">
@@ -20,7 +20,7 @@
                   <li class="menu__item"><a class="menu__link" href="catalog.html">Catálogo</a></li>
                   <li class="menu__item"><a class="menu__link" href="about.html">Sobre nosotros</a></li>
                   <li class="menu__item"><a class="menu__link" href="contacts.html">Contactos</a></li>
-                  <li class="menu__item"><a class="menu__link active" href="reviews.html">Reseñas</a></li>
+                  <li class="menu__item"><a class="menu__link" href="reviews.html">Reseñas</a></li>
                 </ul>
                 <div class="menu-mobile__bottom">
                   <button class="menu-mobile__btn btn js-show-popup" data-target="#popup">Pedir una llamada</button>
@@ -35,7 +35,7 @@
                   <li class="menu__item"><a class="menu__link" href="catalog.html">Catálogo</a></li>
                   <li class="menu__item"><a class="menu__link" href="about.html">Sobre nosotros</a></li>
                   <li class="menu__item"><a class="menu__link" href="contacts.html">Contactos</a></li>
-                  <li class="menu__item"><a class="menu__link active" href="reviews.html">Reseñas</a></li>
+                  <li class="menu__item"><a class="menu__link" href="reviews.html">Reseñas</a></li>
                 </ul>
                 <div class="nav__btn-wrap"><a class="nav__link-tel" href="tel:+56229141108">(+56) 229 141 108</a>
                   <button class="nav__btn btn js-show-popup" data-target="#popup">Pedir una llamada</button>
@@ -45,10 +45,50 @@
             </div>
           </div>
         </div>
-    <div class="reviews-main">
+    <div class="success-header">
       <div class="container">
-        <div class="reviews-main__slider js-slider-reviews-wrap">
-          <div class="reviews-main__list js-slider-reviews swiper-wrapper">
+        <div class="success-header__wrapper"><img class="success-header__photo js-success-product-photo" src="" alt=""/>
+          <div class="success-header__info">
+            <h2 class="success-header__title">¡GRACIAS POR SU PEDIDO!</h2>
+            <div class="success-header__desc">
+              <p class="success-header__text">¡Gracias por elegir nuestra empresa!<br/>Nos pondremos en contacto con usted en el (+56) 229 141 108 en unos minutos para confirmar los detalles de su pedido.</p>
+              <p class="success-header__text"><span class="js-success-product-name"> </span> ha devuelto la salud a miles de personas.<br/>¡Usted está en el buen camino!</p>
+            </div>
+          </div>
+        </div>
+        <div class="success-header__list">
+          <div class="success-item">
+            <div class="success-item__wrap-photo"><img class="success-item__ico" src="/img/svg/success_1.svg" alt=""/></div>
+            <p class="success-item__text">Tiempo medio de espera de la llamada<span class="color">5 minutos</span></p>
+          </div>
+          <div class="success-item">
+            <div class="success-item__wrap-photo"><img class="success-item__ico" src="/img/svg/success_2.svg" alt=""/></div>
+            <p class="success-item__text">Disponibilidad en&nbsp;stock<span class="color">En stock</span></p>
+          </div>
+          <div class="success-item">
+            <div class="success-item__wrap-photo"><img class="success-item__ico" src="/img/svg/success_3.svg" alt=""/></div>
+            <p class="success-item__text">Resto <br/>en stock<span class="color"><span class="js-product-residue">60</span><span> pzs.</span></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="success-diary">
+      <div class="container">
+        <div class="success-diary__wrapper"><img class="success-diary__photo" src="/img/diary.jpg" alt=""/>
+          <div class="success-diary__info">
+            <h2 class="success-diary__title">¡CUIDAR DE SU SALUD ES NUESTRA MÁXIMA PRIORIDAD!</h2>
+            <div class="success-diary__desc">
+              <p class="success-diary__text">¡Adjuntamos a su pedido un regalo, Diario de Salud, para ayudarle a seguir los cambios en su cuerpo y a sentirse bien!</p>
+              <p class="success-diary__text">¡Siempre con usted, equipo de Vitaliss!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="success-reviews">
+      <div class="container">
+        <div class="success-reviews__slider js-slider-reviews-wrap">
+          <div class="success-reviews__list js-slider-reviews swiper-wrapper">
             <div class="reviews-list swiper-slide">
                   <div class="review js-review">
                     <div class="review__top"><img class="review__photo" src="/img/review_argosev_bio_1.png" alt=""/>
@@ -194,7 +234,7 @@
                   </div>
             </div>
           </div>
-          <div class="reviews-main__scrollbar scrollbar js-slider-reviews-scrollbar"></div>
+          <div class="success-reviews__scrollbar scrollbar js-slider-reviews-scrollbar"></div>
         </div>
       </div>
     </div>
