@@ -56,7 +56,6 @@
               <p class="contacts-form__title">¡HACER UN PEDIDO!</p>
               <div class="contacts-form__wrapper">
                 <div class="contacts-form__inputs">
-                  <input class="contacts-form__input contacts-form__input--hidden js-product-name-form" value="" name="product"/>
                   <input class="contacts-form__input" type="text" name="name" placeholder="Nombre" required="required"/>
                   <input class="contacts-form__input" type="text" name="phone" placeholder="Teléfono" required="required"/>
                   <input class="contacts-form__input" type="email" name="email" placeholder="E-mail"/>
@@ -77,7 +76,7 @@
                 <input type="hidden" name="sid5" value="{subid}"/>
                 <input type="hidden" name="landing_id" value=""/>
                 <input type="hidden" name="country_code" value="CZ"/>
-                <input type="hidden" name="redirect_url" value="subscribe.html"/>
+                <input type="hidden" name="redirect_url" value=""/>
               </div>
             </form>
           </div>
@@ -122,20 +121,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
     <script>
-      window.lang = 'cz';
+      window.lang = 'es';
       window.is_downloaded_from_dashboard = true;
       window.duplicate_order_phone = '420290000232';
       window.order_recently_confirmed = 'Vaše objednávka již byla zadána';
       window.order_in_progress =
-      	'Vaša objednávka již byla zadána, pokud máte dotazy týkající se produktu, 			můžete se obrátit na číslo příchozí linky';
+      	'Vaša objednávka již byla zadána, pokud máte dotazy týkající se produktu, můžete se obrátit na číslo příchozí linky';
       window.order_got_it = 'Ok';
       window._locations = [{ "offer_id": "533", "country_code": "CZ", "price_current": 860, "display_priority": 1, "id": 3077311, "name": "Czech Republic", "type": "country", "country_id": 3077311, "region_name": null, "currency": "czk", "country_name": "Czech Republic", "price_previous": 1720, "price_delivery": 0, "price_total": 860 }, { "offer_id": "533", "country_code": "SK", "price_current": 39, "display_priority": 14, "id": 3057568, "name": "Slovak Republic", "type": "country", "country_id": 3057568, "region_name": null, "currency": "€", "country_name": "Slovakia", "price_previous": 78, "price_delivery": 0, "price_total": 39 }, { "offer_id": "533", "country_code": "HR", "price_current": 287, "display_priority": 9, "id": 3202326, "name": "Croatia", "type": "country", "country_id": 3202326, "region_name": null, "currency": "Kn", "country_name": "Croatia", "price_previous": 574, "price_delivery": 0, "price_total": 287 }, { "offer_id": "533", "country_code": "BG", "price_current": 69, "display_priority": 8, "id": 732800, "name": "Bulgaria", "type": "country", "country_id": 732800, "region_name": null, "currency": "лв", "country_name": "Bulgaria", "price_previous": 138, "price_delivery": 0, "price_total": 69 }, { "offer_id": "533", "country_code": "RO", "price_current": 149, "display_priority": 4, "id": 798549, "name": "Romania", "type": "country", "country_id": 798549, "region_name": null, "currency": "ron", "country_name": "Romania", "price_previous": 298, "price_delivery": 0, "price_total": 149 }, { "offer_id": "533", "country_code": "PL", "price_current": 139, "display_priority": 2, "id": 798544, "name": "Poland", "type": "country", "country_id": 798544, "region_name": null, "currency": "zł", "country_name": "Poland", "price_previous": 278, "price_delivery": 0, "price_total": 139 }, { "offer_id": "533", "country_code": "HU", "price_current": 8900, "display_priority": 0, "id": 719819, "name": "Hungary", "type": "country", "country_id": 719819, "region_name": null, "currency": "Ft", "country_name": "Hungary", "price_previous": 17800, "price_delivery": 0, "price_total": 8900 }];
       window.additional_phone_in_downloaded = false;
       window.is_namephone_validated = true;
       window.news_url = 'https://zpravy-24.com/teasers-feed?aaid=154080&acid=1026324&currency=usd';
       window.back_button_enabled = true;
-      
-      
       document.cookie = 'popup_customers_enabled=true;path=/';
       document.cookie = 'popup_callback_enabled=true;path=/';
       document.cookie = 'popup_mouseout_enabled=true;path=/';

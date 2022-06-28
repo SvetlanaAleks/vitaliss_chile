@@ -42,19 +42,14 @@ const Order = (function () {
     createOrderForm: function () {
       const productName = getParameterByName("id");
 
-      const object = {
-        product: productName,
-      };
-      data.push(object);
-
       if (productName) {
         $(".js-product-name").html(productName);
         $(".js-product-photo").attr("src", `img/${productName}.png`);
-        $(".js-product-name-form").val(productName);
 
         const productInfo = productsInfo[`${productName}`];
         $(`input[name='campaign_id']`).val(productInfo.campaign_id);
         $(`input[name='landing_id']`).val(productInfo.landing_id);
+        $(`input[name='redirect_url']`).val(`subscribe.html?id=${productName}`);
       }
     },
     choiceCountProduct: function () {
@@ -76,7 +71,7 @@ const Order = (function () {
       });
     },
     createSuccessPage: function () {
-      const paramProduct = getParameterByName("product");
+      const paramProduct = getParameterByName("id");
       $(".js-success-product-name").html(paramProduct);
       $(".js-success-product-photo").attr("src", `img/${paramProduct}.png`);
     },
@@ -96,8 +91,8 @@ const Order = (function () {
       Order.createOrderForm();
       Order.choiceCountProduct();
       Order.createSuccessPage();
-      // Order.submitForm();
       Order.showResiudePack();
+      Order.submitForm();
     },
   };
 })();
