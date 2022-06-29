@@ -28,6 +28,10 @@ const Order = (function () {
     submitForm: function () {
       $("#order-form").submit(function (e) {
         // e.preventDefault();
+
+        $(`input[name='count']`).val(count);
+        $(`input[name='location']`).val("https://vitaliss-chile.vercel.app/");
+
         const dataForm = $(this).find("input.js-data").serializeArray();
         var [...object] = dataForm.map(function (item) {
           return {
@@ -37,19 +41,13 @@ const Order = (function () {
         });
         data.push(...object);
 
-        const countObject = {
-          answer: count,
-          question: "count",
-        };
-
-        data.push(countObject);
-
         updValueChatbotHistory();
       });
     },
     createOrderForm: function () {
       const productName = getParameterByName("id");
-      // const countryCode = $(`input[name='country_code']`);
+      const countryCode = $(`input[name='country_code']`);
+      countryCode.val("CL");
       if (productName) {
         $(".js-product-name").html(productName);
         $(".js-product-photo").attr("src", `img/${productName}.png`);
