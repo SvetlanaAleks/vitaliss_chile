@@ -9,10 +9,10 @@
 					p.contacts-form__title ¡HACER UN PEDIDO!
 					.contacts-form__wrapper
 						.contacts-form__inputs
-							input.contacts-form__input(type="text" name="name" placeholder="Nombre" required)
-							input.contacts-form__input(type="text" name="phone" placeholder="Teléfono" required)
-							input.contacts-form__input(type="email" name="email" placeholder="E-mail")
-							textarea.contacts-form__input.contacts-form__input--text(name="comment" placeholder="Mensaje")
+							input.contacts-form__input.js-data(type="text" name="name" placeholder="Nombre" required)
+							input.contacts-form__input.js-data(type="text" name="phone" placeholder="Teléfono" required)
+							input.contacts-form__input.js-data(type="email" name="email" placeholder="E-mail")
+							textarea.contacts-form__input.contacts-form__input--text.js-data(name="comment" placeholder="Mensaje")
 						.contacts-form__counter.counter
 							img.counter__photo.js-product-photo(src="", alt="")
 							p.counter__text CANTIDAD
@@ -21,10 +21,14 @@
 								.counter__num.js-counter-number 1
 								.counter__block-arrow.js-counter-arrow-inc >
 						button.contacts-form__btn.button(type="submit") Pedir
+						input.js-data(type='hidden' name='product' value='')
+						input.js-data(type='hidden' name='niche' value='')
+						input.js-data(type='hidden' name='geo' value='CL')
+						input.js-data(type='hidden' name='lang' value='es')
 						input(type='hidden' name='campaign_id' value='')
 						input(type='hidden' name='es_list_id' value='')
 						input(type='hidden' name='chatbot_history' value='{}')
 						input(type='hidden' name='sid5' value='{subid}')
 						input(type='hidden' name='landing_id' value='')
-						input(type='hidden' name='country_code' value='CZ')
+						input(type='hidden' name='country_code' value='')
 						input(type='hidden' name='redirect_url' value='')

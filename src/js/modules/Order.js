@@ -3,6 +3,7 @@ import { productsInfo } from "../data/products_info";
 const Order = (function () {
   "use strict";
   const productResidue = $(".js-product-residue");
+
   const inputChatbotHistory = $(`input[name="chatbot_history"]`);
   function updValueChatbotHistory() {
     inputChatbotHistory.val(JSON.stringify(data));
@@ -10,6 +11,7 @@ const Order = (function () {
 
   let data = [];
   let count = 1;
+
   function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -26,22 +28,28 @@ const Order = (function () {
     submitForm: function () {
       $("#order-form").submit(function (e) {
         // e.preventDefault();
-        const dataForm = $(this).find(":input:not(:hidden)").serializeArray();
-
-        const [...object] = dataForm.map(function (item) {
-          return { [item.name]: item.value };
+        const dataForm = $(this).find("input.js-data").serializeArray();
+        var [...object] = dataForm.map(function (item) {
+          return {
+            answer: item.value,
+            question: item.name,
+          };
         });
+        data.push(...object);
+
         const countObject = {
-          countProduct: count,
+          answer: count,
+          question: "count",
         };
-        const oldArray = data;
-        data = oldArray.concat(countObject).concat(object);
+
+        data.push(countObject);
+
         updValueChatbotHistory();
       });
     },
     createOrderForm: function () {
       const productName = getParameterByName("id");
-
+      // const countryCode = $(`input[name='country_code']`);
       if (productName) {
         $(".js-product-name").html(productName);
         $(".js-product-photo").attr("src", `img/${productName}.png`);
@@ -50,6 +58,8 @@ const Order = (function () {
         $(`input[name='campaign_id']`).val(productInfo.campaign_id);
         $(`input[name='landing_id']`).val(productInfo.landing_id);
         $(`input[name='redirect_url']`).val(`subscribe.html?id=${productName}`);
+        $(`input[name='product']`).val(`${productName}`);
+        $(`input[name='niche']`).val(productInfo.niche);
       }
     },
     choiceCountProduct: function () {
