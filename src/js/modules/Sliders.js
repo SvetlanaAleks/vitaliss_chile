@@ -26,13 +26,13 @@ const Sliders = (function () {
               slidesPerView: 1,
             },
             640: {
-              slidesPerView: 2,
+              slidesPerView: 'auto',
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 'auto',
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 'auto',
             },
           },
         });

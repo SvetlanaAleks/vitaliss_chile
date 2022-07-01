@@ -1,9 +1,8 @@
 include ../mixins/review
-include ../data/index
+include ../data/reviews
 
 -
-	let array = reviewsArray;
-
+	let array = reviewsArray.sort(() => Math.random() - 0.5);
 	const perChunk = 2;
 
 	const result = array.reduce((resultArray, item, index) => { 
