@@ -8,6 +8,7 @@ import Menu from "./modules/Menu";
 import layout from "./global/layout";
 import Order from "./modules/Order";
 import "./global/youtube";
+import Contacts from "./modules/Contacts";
 
 $(function () {
   var year = new Date().getFullYear();
@@ -22,6 +23,7 @@ $(function () {
   Popup.init();
   Menu.init();
   Order.init();
+  Contacts.init();
 
   objectFitImages();
 
