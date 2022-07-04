@@ -1,5 +1,3 @@
-- var CALLBACKPOPUP = LANG.callbackpopup;
-
 .popup.js-popup#popup
 	.popup__wrap
 		.popup__close.js-close
@@ -7,8 +5,11 @@
 		.popup__content
 			.popup__form
 				p.popup__title Le llamaremos para aclarar los detalles
-				form.form-popup(action="/", method="post")
-					.form-popup__inputs
-						input.form-popup__input(type="text" name="name" placeholder="Nombre")
-						input.form-popup__input(type="text" name="phone" placeholder="Teléfono")
-					button.form-popup__btn.btn Pedir una llamada
+				form.form-popup.js-order-form(action="send.php", method="post")
+					.form-popup__success.js-success-form
+						p.popup__title Спасибо! В ближайщее время мы свяжемся з Вами.
+					.form-popup__wrap.js-content-form
+						.form-popup__inputs
+							input.form-popup__input(type="text" name="name" placeholder="Nombre")
+							input.form-popup__input(type="text" name="phone" placeholder="Teléfono")
+						button.form-popup__btn.btn Pedir una llamada

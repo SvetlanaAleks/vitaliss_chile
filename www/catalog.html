@@ -231,12 +231,17 @@
         <div class="popup__content">
           <div class="popup__form">
             <p class="popup__title">Le llamaremos para aclarar los detalles</p>
-            <form class="form-popup" action="/" method="post">
-              <div class="form-popup__inputs">
-                <input class="form-popup__input" type="text" name="name" placeholder="Nombre"/>
-                <input class="form-popup__input" type="text" name="phone" placeholder="Teléfono"/>
+            <form class="form-popup js-order-form" action="send.php" method="post">
+              <div class="form-popup__success js-success-form">
+                <p class="popup__title">Спасибо! В ближайщее время мы свяжемся з Вами.</p>
               </div>
-              <button class="form-popup__btn btn">Pedir una llamada</button>
+              <div class="form-popup__wrap js-content-form">
+                <div class="form-popup__inputs">
+                  <input class="form-popup__input" type="text" name="name" placeholder="Nombre"/>
+                  <input class="form-popup__input" type="text" name="phone" placeholder="Teléfono"/>
+                </div>
+                <button class="form-popup__btn btn">Pedir una llamada</button>
+              </div>
             </form>
           </div>
         </div>

@@ -1,11 +1,15 @@
 .contacts
 	.container
 		.contacts__form
-			form.contacts-form#order-form(action="send.php", method="post")
-				p.contacts-form__title Deje su solicitud y le llamaremos
-				p.contacts-form__desc ¡Si desea que le llamemos, deje su número de teléfono y nos pondremos en contacto con usted!
-				.contacts-form__wrapper
-					.contacts-form__inputs
-						input.contacts-form__input(type="text" name="name" placeholder="Nombre")
-						input.contacts-form__input(type="text" name="phone" placeholder="Teléfono")
-					button.contacts-form__btn.button Enviar
+			form.contacts-form.js-order-form(action="send.php", method="post")
+				.contacts-form__success.js-success-form
+					p.contacts-form__title Спасибо!
+					p.contacts-form__desc В ближайщее время мы свяжемся з Вами.
+				.contacts-form__wrap.js-content-form
+					p.contacts-form__title Deje su solicitud y le llamaremos
+					p.contacts-form__desc ¡Si desea que le llamemos, deje su número de teléfono y nos pondremos en contacto con usted!
+					.contacts-form__wrapper
+						.contacts-form__inputs
+							input.contacts-form__input(type="text" name="name" placeholder="Nombre")
+							input.contacts-form__input(type="text" name="phone" placeholder="Teléfono")
+						button.contacts-form__btn.button Enviar

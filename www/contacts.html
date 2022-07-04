@@ -48,15 +48,21 @@
     <div class="contacts">
       <div class="container">
         <div class="contacts__form">
-          <form class="contacts-form" id="order-form" action="send.php" method="post">
-            <p class="contacts-form__title">Deje su solicitud y le llamaremos</p>
-            <p class="contacts-form__desc">¡Si desea que le llamemos, deje su número de teléfono y nos pondremos en contacto con usted!</p>
-            <div class="contacts-form__wrapper">
-              <div class="contacts-form__inputs">
-                <input class="contacts-form__input" type="text" name="name" placeholder="Nombre"/>
-                <input class="contacts-form__input" type="text" name="phone" placeholder="Teléfono"/>
+          <form class="contacts-form js-order-form" action="send.php" method="post">
+            <div class="contacts-form__success js-success-form">
+              <p class="contacts-form__title">Спасибо!</p>
+              <p class="contacts-form__desc">В ближайщее время мы свяжемся з Вами.</p>
+            </div>
+            <div class="contacts-form__wrap js-content-form">
+              <p class="contacts-form__title">Deje su solicitud y le llamaremos</p>
+              <p class="contacts-form__desc">¡Si desea que le llamemos, deje su número de teléfono y nos pondremos en contacto con usted!</p>
+              <div class="contacts-form__wrapper">
+                <div class="contacts-form__inputs">
+                  <input class="contacts-form__input" type="text" name="name" placeholder="Nombre"/>
+                  <input class="contacts-form__input" type="text" name="phone" placeholder="Teléfono"/>
+                </div>
+                <button class="contacts-form__btn button">Enviar</button>
               </div>
-              <button class="contacts-form__btn button">Enviar</button>
             </div>
           </form>
         </div>
@@ -82,12 +88,17 @@
         <div class="popup__content">
           <div class="popup__form">
             <p class="popup__title">Le llamaremos para aclarar los detalles</p>
-            <form class="form-popup" action="/" method="post">
-              <div class="form-popup__inputs">
-                <input class="form-popup__input" type="text" name="name" placeholder="Nombre"/>
-                <input class="form-popup__input" type="text" name="phone" placeholder="Teléfono"/>
+            <form class="form-popup js-order-form" action="send.php" method="post">
+              <div class="form-popup__success js-success-form">
+                <p class="popup__title">Спасибо! В ближайщее время мы свяжемся з Вами.</p>
               </div>
-              <button class="form-popup__btn btn">Pedir una llamada</button>
+              <div class="form-popup__wrap js-content-form">
+                <div class="form-popup__inputs">
+                  <input class="form-popup__input" type="text" name="name" placeholder="Nombre"/>
+                  <input class="form-popup__input" type="text" name="phone" placeholder="Teléfono"/>
+                </div>
+                <button class="form-popup__btn btn">Pedir una llamada</button>
+              </div>
             </form>
           </div>
         </div>
