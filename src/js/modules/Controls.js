@@ -16,13 +16,6 @@ const Controls = (function () {
   const spanReviewsShow = $(".js-reviews-show");
   const btnReviews = $(".js-btn-reviews");
 
-  function hideBtn(countProductsShow, countProductsAll) {
-    if (countProductsShow == countProductsAll) {
-      btnCatalog.hide();
-    } else {
-      btnCatalog.show();
-    }
-  }
   function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -30,6 +23,20 @@ const Controls = (function () {
     if (!results) return null;
     if (!results[2]) return "";
     return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+  function setGetParam(key, value) {
+    if (history.pushState) {
+      var params = new URLSearchParams(window.location.search);
+      params.set(key, value);
+      var newUrl =
+        window.location.protocol +
+        "//" +
+        window.location.host +
+        window.location.pathname +
+        "?" +
+        params.toString();
+      window.history.pushState({ path: newUrl }, "", newUrl);
+    }
   }
   function showListProduct(idActiveBlock) {
     const activeList = $(`.js-list-prod[data-target="${idActiveBlock}"]`);
@@ -64,6 +71,13 @@ const Controls = (function () {
       tabs.click(function (e) {
         e.preventDefault();
         const _this = $(this);
+
+        const category = _this.attr("id");
+        localStorage.setItem("category", category);
+
+        setGetParam("id", category);
+        Controls.highlightingActiveTab();
+
         const idActiveBlock = _this.prop("id");
         tabs.removeClass("active");
         _this.addClass("active");
@@ -91,8 +105,6 @@ const Controls = (function () {
       const countProductsShow = parent
         .find(".js-catalog-show")
         .find(product).length;
-
-      hideBtn(countProductsShow, countProductsAll);
 
       const hideCatalog = parent.find(".js-catalog-hide");
       if (hideCatalog.hasClass("show")) {
